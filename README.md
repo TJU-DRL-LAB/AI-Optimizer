@@ -1,8 +1,8 @@
 # AI-Optimizer
-AI-Optimizer is a next generation deep reinforcement learning framework, privoding rich algorithm libraries ranging from model-free to model-based RL algorithms, from single-agent to multi-agent algorithms. 
+AI-Optimizer is a next generation deep reinforcement learning suit, privoding rich algorithm libraries ranging from model-free to model-based RL algorithms, from single-agent to multi-agent algorithms. Moreover, AI-Optimizer contains a flexible and easy-to-use distributed training framekwork for efficient policy training.  
 ![](./images/framework1.png)
 
-For now, AI-Optimizer privodes following facets and more libraries and implementations are comming soon.
+For now, AI-Optimizer privodes following built-in libraries and more libraries and implementations are comming soon.
 - Model-based reinforcement learning
 - Representation Learning  
 - Multiagent Reinforcement learning
