@@ -1,5 +1,5 @@
 # AI-Optimizer
-![AI-Opitmizer Framework](./images/framework.png)
+![](./images/framework.png)
 
 AI-Optimizer is a next generation deep reinforcement learning framework, privoding rich algorithm libraries ranging from model-free to model-based RL algorithms, from single-agent to multi-agent algorithms. 
 
