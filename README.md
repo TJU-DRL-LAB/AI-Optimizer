@@ -24,6 +24,11 @@ In this branch, we focus on three key questions:
 - **How can we obtain or realize such good representations?**
 - **How can we making use of good representations to improve RL?**
 
+Taking **Self-supervised Learning** (SSL) as our major paradigm for representation learning, we carry out our studies from four perspectives: 
+**State Representation**,
+**Action Representation**,
+**Policy Representation**,
+**Environment (and Task) Representation**.
 
 
 ## transfer reinforcement learning
