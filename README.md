@@ -15,7 +15,16 @@ MARL repo contains the released codes of representative research works of TJU-RL
 ## Offline-rl-algorithms (Offrl)
 Offline-rl-algorithms is a xxx
 
-## self-supervised representation reinforcement learning
+## Self-supervised Reinforcement Learning (SSRL)
+SSRL repo contains the released codes of representative research works of TJU-RL-Lab on the topic of Self-supervised Representation Learning for RL. Since the RL agent always receives, processes and delivers all kinds of data in the learning process (i.e., the typical Agent-Environment Interface), 
+how to **properly deal with such "data"** is naturally one key point to the effectiveness and efficiency of RL.
+
+In this branch, we focus on three key questions:
+- **What should a good representation for RL be?**
+- **How can we obtain or realize such good representations?**
+- **How can we making use of good representations to improve RL?**
+
+
 
 ## transfer reinforcement learning
 
