@@ -1,0 +1,5 @@
+include tjuOfflineRL/*.pyx
+include tjuOfflineRL/*.pxd
+include tjuOfflineRL/cpp/include/tjuOfflineRL/*.h
+include tjuOfflineRL/py.typed
+include tjuOfflineRL/*.pyi
