@@ -17,7 +17,8 @@ Multiagent RL repo contains the released codes of representative research works 
 
 
 ## Offline-rl-algorithms (Offrl)
-Offline-rl-algorithms is a xxx
+Offline Reinforcement Learning (Offline RL), also known as Batch Reinforcement Learning (BRL), is a variant of Reinforcement Learning that requires an agent to learn to perform tasks from a fixed dataset without exploration. We plan to establish the ecology of Offline RL in the future. Driven by three key challenges of Offline RL, we are working on researches to address them respectivly. For the limited data problem in Offline RL, we are working on desgin different data augmentation techniques to expand the orginal datasets. Besides, we are designing the multimodal datasets, which is more in line with the real world. For the overestimation problem in existing Offline RL methods, we plan to develop a unified algorithmic framework together with a unified opensource code-level implementation framework. Finally, our ultimate goal is to land Offline RL methods in real-world decision-making scenarios by further investigating the offline to online training regime.
+![Ecology of Offline RL](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/Ecology%20of%20Offline%20RL.png)
 
 ## Self-supervised Reinforcement Learning (SSRL)
 SSRL repo contains the released codes of representative research works of TJU-RL-Lab on the topic of Self-supervised Representation Learning for RL. Since the RL agent always receives, processes and delivers all kinds of data in the learning process (i.e., the typical Agent-Environment Interface), 
