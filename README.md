@@ -4,15 +4,22 @@ AI-Optimizer is a next generation deep reinforcement learning suit, privoding ri
 
 For now, AI-Optimizer privodes following built-in libraries and more libraries and implementations are comming soon.
 - [Multiagent Reinforcement learning](marl)
-- Representation Reinforcement Learning
-- Offline Reinforcement Learning
-- Transfer Reinforcement Learning
-- Model-based reinforcement learning
+- [Self-supervized Representation Reinforcement Learning](ssrl)
+- [Offline Reinforcement Learning](offline-rl-algorithms)
+- [Transfer Reinforcement Learning](transferrl)
+- [Model-based reinforcement learning](mbrl)
 
-## Repo: Multiagent Reinforcement Learning (MARL)
+## Multiagent Reinforcement Learning (MARL)
 MARL repo contains the released codes of representative research works of TJU-RL-Lab on the topic of Multiagent Reinforcement Learning (MARL). The research topics are classified according to the critical challenges of MARL, e.g., the curse of dimensionality (scalability) issue, non-stationarity, multiagent credit assignment, exploration–exploitation tradeoff and hybrid action. see more [here](https://github.com/TJU-DRL-LAB/MARL)
 
-## Repo: offline-rl-algorithms
+## Offline-rl-algorithms (Offrl)
+Offline-rl-algorithms is a xxx
+
+## self-supervised representation reinforcement learning
+
+## transfer reinforcement learning
+
+## model-based reinforcement learning 
 
 
 # Contributing
