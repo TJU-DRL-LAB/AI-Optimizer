@@ -27,7 +27,7 @@ From the perspecive of action execution, we can also divide `Model-Based RL` int
 
 There are many other classification and we can list some of them here. From the perspective of dynamics model, we can divide dynamics models into three categories:`forward model`、`reverse/backward model` and `inverse model`. From the perspective of estimation method, the methods can be categorized as`parametric ` and `non-parametric` or `exact` and `approximate`. From the perspective of planning updating, the methods can be categorized as `value update ` and `policy update`.
 
-What's more, these perspectives to divide the algorithms are orthogonal, which means some algorithms can be grouped into different categories according to different perspectives.But even with this, we have to admit that it’s really quite hard to draw an accurate, all-encompassing taxonomy of algorithms in the Model-Based RL space, because the modularity of algorithms is not well-represented by a tree structure.  **So we think it would be more appropriate to give the algorithm to a specific topic rather than a simple classification.** Moreover, we will publish a series of related blogs to explain more Model-Based RL algorithms. For a more detailed tutorial of this taxnomy, we refer the reader to our [ZhiHu blog series](https://zhuanlan.zhihu.com/p/425318401).
+What's more, these perspectives to divide the algorithms are orthogonal, which means some algorithms can be grouped into different categories according to different perspectives.But even with this, we have to admit that it’s really quite hard to draw an accurate taxonomy of algorithms in the Model-Based RL area.  **So we think it would be more appropriate to give the algorithm to a specific topic rather than a simple classification.** Moreover, we will publish a series of related blogs to explain more Model-Based RL algorithms. For a more detailed tutorial of this taxnomy, we refer the reader to our [ZhiHu blog series](https://zhuanlan.zhihu.com/p/425318401).
 
 ## An Overall View of Research Works in This Repo
 
@@ -100,7 +100,7 @@ Note that each algorithm may use only one or several environments in the ones li
 To clone this repo:
 
 ```
-git clone http://rl.beiyang.ren/tju_rl/MBRL-Lib.git
+git clone git@github.com:TJU-DRL-LAB/mbrl.git
 ```
 
 Note that this repo is a collection of multiple research branches (according to the taxonomy). 
