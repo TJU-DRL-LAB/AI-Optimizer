@@ -1,18 +1,16 @@
-# AI-Optimizer
-AI-Optimizer is a next generation deep reinforcement learning suit, privoding rich algorithm libraries ranging from model-free to model-based RL algorithms, from single-agent to multi-agent algorithms. Moreover, AI-Optimizer contains a flexible and easy-to-use distributed training framekwork for efficient policy training.  
-![](./images/framework1.png)
+# tjuOfflineRL
 
-For now, AI-Optimizer privodes following built-in libraries and more libraries and implementations are comming soon.
-- [Multiagent Reinforcement learning](https://github.com/TJU-DRL-LAB/MARL)
-- Representation Reinforcement Learning
-- Offline Reinforcement Learning
-- Transfer Reinforcement Learning
-- Model-based reinforcement learning
+Based on d3rlpy, we have implemented some newly released offline RL algorithms that were not originally included.
 
-## Repo: Multiagent Reinforcement Learning (MARL)
-MARL repo contains the released codes of representative research works of TJU-RL-Lab on the topic of Multiagent Reinforcement Learning (MARL). The research topics are classified according to the critical challenges of MARL, e.g., the curse of dimensionality (scalability) issue, non-stationarity, multiagent credit assignment, exploration–exploitation tradeoff and hybrid action. see more [here](https://github.com/TJU-DRL-LAB/MARL)
+d3rlpy is an offline deep reinforcement learning library for practitioners and researchers.
+
+More information can be found in https://github.com/takuseno/d3rlpy
 
 
 
-# Contributing
-AI-Optimizer is still under development. More algorithms and features are going to be added and we always welcome contributions to help make AI-Optimizer better. Feel free to contribute.
+For installation, please clone this repo and change to the repo directory and:
+
+```
+pip install -e .
+```
+

@@ -1,0 +1,15 @@
+torch==1.6.0
+scikit-learn==0.23.1
+tensorboardX==2.0
+tqdm==4.47.0
+GPUtil==1.4.0
+h5py==2.10.0
+gym==0.17.2
+Cython==0.29.21
+stable-baselines3>=0.10.0
+click==8.0.1
+typing-extensions==3.7.4.3
+cloudpickle==1.3.0
+scipy==1.5.4
+structlog==20.2.0
+colorama==0.4.4
