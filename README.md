@@ -40,7 +40,21 @@ with the ultimate goal of establishing the ecology of SSRL.
 See more [here](https://github.com/TJU-DRL-LAB/self-supervised-rl).
 
 
-## transfer reinforcement learning
+## Transfer and Multi-task Reinforcement Learning
+Recently, Deep Reinforcement Learning (DRL) has achieved a lot of success in human-level control problems, such as video games, robot control, autonomous vehicles, smart grids and so on. However, DRL is still faced with the **sample-inefficiency problem** especially when the state-action space becomes large, which makes it difficult to learn from scratch. This means the agent has to use a large number of samples to learn a good policy. Furthermore, the sample-inefficiency problem is much more severe in Multiagent Reinforcement Learning (MARL) due to the exponential increase of the state-action space.  
+
+**Solutions**
+
+- **Transfer RL** which leverages prior knowledge from previously related tasks to accelerate the learning process of RL, has become one popular research direction to significantly improve sample efficiency of DRL. 
+
+- **Multi-task RL**, in which one network learns policies for multiple tasks, has emerged as another promising direction with fast inference and good performance.
+
+This repository contains the released codes of representative benchmarks and algorithms of TJU-RL-Lab on the topic of Transfer and Multi-task Reinforcement Learning, including the single-agent domain and multi-agent domain, addressing the sample-inefficiency problem in different ways.
+
+<p align="center"><img align="center" src="./images/overview.png" alt="overview" style="zoom:60%;" /></p>
+
+## Challenges 
+
 
 ## model-based reinforcement learning 
 This repo contains a unified opensource code implementation for the Model-Based Reinforcement Learning methods. MBRL-Lib provides implementations of popular MBRL algorithms as examples of using this library. The current classifications of the mainstream algorithms in the modern Model-Based RL area are orthogonal, which means some algorithms can be grouped into different categories according to different perspectives. But the core three directions for future work in MBRL are `faster planning`、` higher tolerance to model error` 、`scalability` to harder problems. Currently, we have implemented Dreamer, MBPO, MuZero, and we plan to keep increasing this list in the future. **We present one of the most comprehensive Model-Based libraries so far, covering most mainstream algorithms in the Model-Based RL area.** We will constantly update this repo to include new research made by TJU-DRL-Lab. See more [here](https://github.com/TJU-DRL-LAB/model-based-rl/tree/master).
