@@ -1,0 +1,8 @@
+mujoco-py==1.50.1.68
+tensorflow-gpu==1.13.1
+tensorflow-probability==0.6.0
+tqdm==4.32.1
+ray[rllib,debug]==0.6.4
+gtimer==1.0.0b5
+gym==0.12.0
+git+https://github.com/hartikainen/serializable.git@76516385a3a716ed4a2a9ad877e2d5cbcf18d4e6
