@@ -1,0 +1,13 @@
+## copy of https://github.com/rail-berkeley/softlearning/blob/master/environment.yml
+
+name: mbpo
+channels:
+- defaults
+- conda-forge
+dependencies:
+- python=3.6.5
+- pip>=18.0
+- conda>=4.5.9
+- patchelf=0.9
+- pip:
+    - -r requirements.txt
