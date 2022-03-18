@@ -34,7 +34,7 @@ Taking **Self-supervised Learning** (SSL) as our major paradigm for representati
 ## transfer reinforcement learning
 
 ## model-based reinforcement learning 
-
+This repo contains a unified opensource code implementation for the Model-Based Reinforcement Learning methods. MBRL-Lib provides implementations of popular MBRL algorithms as examples of how to use this library. Currently, we have implemented Dreamer, MBPO, MuZero and we plan to keep increasing this list in the future. **We present one of the most comprehensive Model-Based  library so far , which covered most mainstream algorithms in Model-Based RL area.** This repo will be constantly updated to include new researches made by TJU-DRL-Lab. 
 
 # Contributing
 AI-Optimizer is still under development. More algorithms and features are going to be added and we always welcome contributions to help make AI-Optimizer better. Feel free to contribute.
