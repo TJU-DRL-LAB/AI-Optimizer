@@ -10,7 +10,11 @@ For now, AI-Optimizer privodes following built-in libraries and more libraries a
 - [Model-based reinforcement learning](mbrl)
 
 ## Multiagent Reinforcement Learning (MARL)
-MARL repo contains the released codes of representative research works of TJU-RL-Lab on the topic of Multiagent Reinforcement Learning (MARL). The research topics are classified according to the critical challenges of MARL, e.g., the curse of dimensionality (scalability) issue, non-stationarity, multiagent credit assignment, exploration–exploitation tradeoff and hybrid action. see more [here](https://github.com/TJU-DRL-LAB/MARL)
+Multiagent RL repo contains the released codes of representative research works of TJU-RL-Lab on the topic of Multiagent Reinforcement Learning (MARL). The research topics are classified according to the critical challenges of MARL, e.g., the curse of dimensionality (scalability) issue, non-stationarity, multiagent credit assignment, exploration–exploitation tradeoff and hybrid action.  To solve these challenges, we propose a series of algorithms from different point of views. A big picture is shown bellow.
+
+<p align="center"><img align="center" src="./multiagent-rl/assets/our-work.png" alt="our solutions"  /></p>
+
+
 
 ## Offline-rl-algorithms (Offrl)
 Offline-rl-algorithms is a xxx
