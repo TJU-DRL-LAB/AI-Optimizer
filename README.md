@@ -3,7 +3,7 @@ AI-Optimizer is a next-generation deep reinforcement learning suit, providing ri
 ![](./images/framework1.png)
 
 AI-Optimizer now provides the following built-in libraries, and more libraries and implementations are coming soon.
-- [Multiagent Reinforcement learning](marl)
+- [Multiagent Reinforcement learning](multiagent-rl)
 - [Self-supervized Representation Reinforcement Learning](ssrl)
 - [Offline Reinforcement Learning](offline-rl-algorithms)
 - [Transfer Reinforcement Learning](transferrl)
