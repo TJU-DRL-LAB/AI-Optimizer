@@ -17,7 +17,7 @@ Offline-rl-algorithms is a xxx
 
 ## Self-supervised Reinforcement Learning (SSRL)
 SSRL repo contains the released codes of representative research works of TJU-RL-Lab on the topic of Self-supervised Representation Learning for RL. Since the RL agent always receives, processes and delivers all kinds of data in the learning process (i.e., the typical Agent-Environment Interface), 
-how to **properly deal with such "data"** is naturally one key point to the effectiveness and efficiency of RL.
+how to **properly represent such "data"** is naturally one key point to the effectiveness and efficiency of RL.
 
 In this branch, we focus on three key questions:
 - **What should a good representation for RL be?**
@@ -29,6 +29,10 @@ Taking **Self-supervised Learning** (SSL) as our major paradigm for representati
 **Action Representation**,
 **Policy Representation**,
 **Environment (and Task) Representation**.
+
+The central contribution of this repo is **A Unified Algorithmic Framework (Implementation Design) of SSRL Algorithm**,
+with the ultimate goal of establishing the ecology of SSRL.
+See more [here](https://github.com/TJU-DRL-LAB/self-supervised-rl).
 
 
 ## transfer reinforcement learning
