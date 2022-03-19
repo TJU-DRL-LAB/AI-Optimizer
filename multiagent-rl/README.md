@@ -16,7 +16,7 @@ This repository will be constantly updated to include new research works.
 
 ### :rocket: State-Of-The-Art Performance
 
-- **[API-QMIX](https://arxiv.org/pdf/2203.05285.pdf)**: the **state-of-the-art** MARL algorithm in the [StarCraft Multi-Agent Challenge (SMAC)](https://github.com/oxwhirl/smac) benchmark. 
+- **[API-QMIX](https://arxiv.org/pdf/2203.05285.pdf)**: the **state-of-the-art** MARL algorithm in the [StarCraft Multi-Agent Challenge (SMAC)](https://github.com/oxwhirl/smac) benchmark, which achieves **100% win-rates in almost all hard and super-hard scenarios (never achieved before)**. 
 
   - paper link: https://arxiv.org/pdf/2203.05285.pdf
 
