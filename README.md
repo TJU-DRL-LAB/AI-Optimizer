@@ -57,7 +57,12 @@ This repository contains the released codes of representative benchmarks and alg
 
 
 ## model-based reinforcement learning 
-This repo contains a unified opensource code implementation for the Model-Based Reinforcement Learning methods. MBRL-Lib provides implementations of popular MBRL algorithms as examples of using this library. The current classifications of the mainstream algorithms in the modern Model-Based RL area are orthogonal, which means some algorithms can be grouped into different categories according to different perspectives. But the core three directions for future work in MBRL are `faster planning`、` higher tolerance to model error` 、`scalability` to harder problems. Currently, we have implemented Dreamer, MBPO, MuZero, and we plan to keep increasing this list in the future. **We present one of the most comprehensive Model-Based libraries so far, covering most mainstream algorithms in the Model-Based RL area.** We will constantly update this repo to include new research made by TJU-DRL-Lab. See more [here](https://github.com/TJU-DRL-LAB/model-based-rl/tree/master).
+This repo contains a unified opensource code implementation for the Model-Based Reinforcement Learning methods. MBRL-Lib provides implementations of popular MBRL algorithms as examples of using this library. From the mainstream viewpoint,  we can simply divide `Model-Based RL` into two categories: `How to Learn a Model` and `How to Utilize a Model`.
+
+- `How to Learn a Model` mainly focuses on how to build the environment model. 
+
+- `How to Utilize a Model` cares about how to utilize the learned model. 
+The current classifications of the mainstream algorithms in the modern Model-Based RL area are orthogonal, which means some algorithms can be grouped into different categories according to different perspectives. But the core three directions for future work in MBRL are `Reduce Error`、`faster planning`、` higher tolerance to model error` 、`scalability to harder problems`. Currently, we have implemented Dreamer, MBPO, MuZero, and we plan to keep increasing this list in the future. **We present one of the most comprehensive Model-Based libraries so far, covering most mainstream algorithms in the Model-Based RL area.** We will constantly update this repo to include new research made by TJU-DRL-Lab. See more [here](https://github.com/TJU-DRL-LAB/model-based-rl/tree/master).
 ![](./images/MBRL_framework.png)
 
 # Contributing
