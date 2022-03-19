@@ -36,7 +36,7 @@ Taking **Self-supervised Learning** (SSL) as our major paradigm for representati
 **Environment (and Task) Representation**.
 
 The central contribution of this repo is **A Unified Algorithmic Framework (Implementation Design) of SSRL Algorithm**,
-with the ultimate goal of establishing the ecology of SSRL.
+with the ultimate goal of establishing the ecology of SSRL, as illustrated below.
 
 <div align=center><img align="center" src="./ssrl/assets/Ecology_of_SSRL.png" alt="Ecology of SSRL" style="zoom:40%;" /></div>
 
