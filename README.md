@@ -6,7 +6,7 @@ AI-Optimizer now provides the following built-in libraries, and more libraries a
 - [Multiagent Reinforcement learning](multiagent-rl)
 - [Self-supervized Representation Reinforcement Learning](ssrl)
 - [Offline Reinforcement Learning](offline-rl-algorithms)
-- [Transfer Reinforcement Learning](transferrl)
+- [Transfer Reinforcement Learning](transfer-and-multi-task-rl)
 - [Model-based reinforcement learning](mbrl)
 
 ## Multiagent Reinforcement Learning (MARL)
