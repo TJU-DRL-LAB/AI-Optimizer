@@ -56,8 +56,6 @@ This repository contains the released codes of representative benchmarks and alg
 
 <p align="center"><img align="center" src="./images/overview.png" alt="overview" style="zoom:60%;" /></p>
 
-## Challenges 
-
 
 ## model-based reinforcement learning 
 This repo contains a unified opensource code implementation for the Model-Based Reinforcement Learning methods. MBRL-Lib provides implementations of popular MBRL algorithms as examples of using this library. From the mainstream viewpoint,  we can simply divide `Model-Based RL` into two categories: `How to Learn a Model` and `How to Utilize a Model`.
