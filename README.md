@@ -58,14 +58,15 @@ This repository contains the released codes of representative benchmarks and alg
 
 
 ## model-based reinforcement learning 
-This repo contains a unified opensource code implementation for the Model-Based Reinforcement Learning methods. MBRL-Lib provides implementations of popular MBRL algorithms as examples of using this library. From the mainstream viewpoint,  we can simply divide `Model-Based RL` into two categories: `How to Learn a Model` and `How to Utilize a Model`.
+This repo contains a unified opensource code implementation for the Model-Based Reinforcement Learning methods. MBRL-Lib provides implementations of popular MBRL algorithms as examples of using this library. The current classifications of the mainstream algorithms in the modern Model-Based RL area are orthogonal, which means some algorithms can be grouped into different categories according to different perspectives. From the mainstream viewpoint,  we can simply divide `Model-Based RL` into two categories: `How to Learn a Model` and `How to Utilize a Model`.
 
 - `How to Learn a Model` mainly focuses on how to build the environment model. 
 
 - `How to Utilize a Model` cares about how to utilize the learned model. 
 
-The current classifications of the mainstream algorithms in the modern Model-Based RL area are orthogonal, which means some algorithms can be grouped into different categories according to different perspectives. But the core three directions for future work in MBRL are `Reduce Error`、`Faster Planning`、` Higher Tolerance to Model Error` 、`Scalability to Harder Problems`. Currently, we have implemented Dreamer, MBPO, MuZero, and we plan to keep increasing this list in the future. **We present one of the most comprehensive Model-Based libraries so far, covering most mainstream algorithms in the Model-Based RL area.** We will constantly update this repo to include new research made by TJU-DRL-Lab. See more [here](https://github.com/TJU-DRL-LAB/model-based-rl/tree/master).
-![](./images/MBRL_framework.png)
+ Ignoring the differences in specific methods, the purpose of MBRL algorithms can be more finely divided into four directions as follows: `Reduce Model Error`、`Faster Planning`、` Higher Tolerance to Model Error` 、`Scalability to Harder Problems`.  For the problem of `How to Learn a Model`, we can study on reducing model error to learn a more accurate world model or learning a world model with higher tolerance to model error. For the problem of `How to Utilize a Model`, we can study on faster planning with a learned model or the scalability of the learned model to harder problems.  
+
+![](./images/MBRL_framework.png)Currently, we have implemented Dreamer, MBPO,BMPO, MuZero, PlaNet, SampledMuZero, CaDM and we plan to keep increasing this list in the future. **We hope to present one of the most comprehensive Model-Based libraries so far, covering most mainstream algorithms in the Model-Based RL area.** We will constantly update this repo to include new research made by TJU-DRL-Lab. See more [here](https://github.com/TJU-DRL-LAB/model-based-rl/tree/master).
 
 # Contributing
 AI-Optimizer is still under development. More algorithms and features are going to be added and we always welcome contributions to help make AI-Optimizer better. Feel free to contribute.
