@@ -9,15 +9,11 @@ Reinforcement learning algorithms can be divided into two main categories: **the
 
 ![image-20220316113418281](README.assets/image-20220316113418281.png)
 
-The model model of the environment is actually a representation model that explicitly contains knowledge about the environment or the task, and generally two types of models are included: a transition model or a dynamics model and the reward model. Once this model is modeled, it can be properly integrated into the interaction with the environment and the learning of strategies, as shown in the above figure. Following the guidance by Igor Mordatch (Google) and Jessica Hamrick (DeepMind) in [ICML 2020 Tutorial](http://sites.google.com/view/mbrl-tutorial), the core three directions for future work in MBRL are `faster planning`、`higher tolerance to model error`、`scalability to harder problems`.
+The model of the environment is actually a representation model that explicitly contains knowledge about the environment or the task, and generally two types of models are included: a transition model or a dynamics model and the reward model. Once this model is modeled, it can be properly integrated into the interaction with the environment and the learning of strategies, as shown in the above figure. There are many different ways to classify the mainstream algorithms in modern Model-Based RL area. From the mainstream viewpoint,  we can simply divide `Model-Based RL` into two categories: `How to Learn a Model` and `How to Utilize a Model`.
 
-![image-20220316115559532](README.assets/image-20220316115559532.png)
+- `How to Learn a Model` mainly focuses on how to build the environment model. 
 
-There are many different ways to classify the mainstream algorithms in modern Model-Based RL area. For example, we can simply divide `Model-Based RL` into two categories: `Learn the Model` and `Given the Model`.
-
-- `Learn the Model` mainly focuses on how to build the environment model.
-
-- `Given the Model` cares about how to utilize the learned model.
+- `How to Utilize a Model` cares about how to utilize the learned model. 
 
 From the perspecive of action execution, we can also divide `Model-Based RL` into two categories: `policy learning` and `planning`. 
 
@@ -27,21 +23,25 @@ From the perspecive of action execution, we can also divide `Model-Based RL` int
 
 There are many other classification and we can list some of them here. From the perspective of dynamics model, we can divide dynamics models into three categories:`forward model`、`reverse/backward model` and `inverse model`. From the perspective of estimation method, the methods can be categorized as`parametric ` and `non-parametric` or `exact` and `approximate`. From the perspective of planning updating, the methods can be categorized as `value update ` and `policy update`.
 
-What's more, these perspectives to divide the algorithms are orthogonal, which means some algorithms can be grouped into different categories according to different perspectives.But even with this, we have to admit that it’s really quite hard to draw an accurate taxonomy of algorithms in the Model-Based RL area.  **So we think it would be more appropriate to give the algorithm to a specific topic rather than a simple classification.** Moreover, we will publish a series of related blogs to explain more Model-Based RL algorithms. For a more detailed tutorial of this taxnomy, we refer the reader to our [ZhiHu blog series](https://zhuanlan.zhihu.com/p/425318401).
+The current classifications of the mainstream algorithms in the modern Model-Based RL area are orthogonal, which means some algorithms can be grouped into different categories according to different perspectives. It’s really quite hard to draw an accurate taxonomy of algorithms in the Model-Based RL area.  **So we think it would be more appropriate to give the algorithm to a specific topic rather than a simple classification.** Ignoring the differences in specific methods, the purpose of MBRL algorithms can be more finely divided into four directions as follows: `Reduce Model Error`、`Faster Planning`、` Higher Tolerance to Model Error` 、`Scalability to Harder Problems`.  For the problem of `How to Learn a Model`, we can study on reducing model error to learn a more accurate world model or learning a world model with higher tolerance to model error. For the problem of `How to Utilize a Model`, we can study on faster planning with a learned model or the scalability of the learned model to harder problems.  
+
+![](./README.assets/MBRL_framework.png)
+
+Moreover, we will publish a series of related blogs to explain more Model-Based RL algorithms. For a more detailed tutorial of this taxnomy, we refer the reader to our [ZhiHu blog series](https://zhuanlan.zhihu.com/p/425318401).
 
 ## An Overall View of Research Works in This Repo
 
-| Topic                   | Method         | Is Contained | Is ReadME Prepared | Publication | Link                                                         |
-| :---------------------- | :------------- | :----------: | :----------------: | :---------: | :----------------------------------------------------------- |
-| Analytical  Gradient    | Dreamer        |      ✅       |         ✅          |  ICLR 2020  | [Dream to control: Learning behaviors by latent imagination](https://arxiv.org/pdf/1912.01603.pdf) |
-| Dyna-style              | MBPO           |      ✅       |         ✅          |  NIPS 2019  | [When to Trust Your Model: Model-Based Policy Optimization](https://arxiv.org/pdf/1906.08253.pdf) |
-| Dyna-style              | BMPO           |      ✅       |         ✅          |  ICML 2020  | [Bidirectional Model-based Policy Optimization](https://arxiv.org/pdf/2007.01995.pdf) |
-| Dynamics Decomposition  | ED2            |      ✅       |         ✅          | In progress | [ED2: An Environment Dynamics Decomposition Framework for World Model Construction](https://arxiv.org/abs/2112.02817) |
-| Planning                | PlaNet         |      ✅       |         ✅          |  ICML 2020  | [Learning Latent Dynamics for Planning from Pixels](https://arxiv.org/pdf/1811.04551.pdf) |
-| Planning                | MuZero         |      ✅       |         ✅          |   Nature    | [Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model](https://arxiv.org/pdf/1911.08265.pdf) |
-| Planning                | Sampled MuZero |      ❌       |         ❌          |  ICML 2021  | [Learning and Planning in Complex Action Spaces](http://arxiv.org/abs/2104.06303) |
-| Dynamics generalization | CaDM           |      ✅       |         ✅          |  ICML 2020  | [Context-aware Dynamics Model for Generalization in Model-Based Reinforcement Learning](https://arxiv.org/pdf/2005.06800.pdf) |
-| Dynamics generalization | TMCL           |      ❌       |         ❌          |  NIPS 2020  | [Trajectory-wise Multiple Choice Learning for Dynamics Generalization in Reinforcement Learning](https://arxiv.org/pdf/2010.13303.pdf) |
+| Topic                           | Approach                | Method         | Is Contained | Is ReadME Prepared | Publication | Link                                                         |
+| ------------------------------- | :---------------------- | :------------- | :----------: | :----------------: | :---------: | :----------------------------------------------------------- |
+| Reduce  Model Error             | Analytical  Gradient    | Dreamer        |      ✅       |         ✅          |  ICLR 2020  | [Dream to control: Learning behaviors by latent imagination](https://arxiv.org/pdf/1912.01603.pdf) |
+| Reduce  Model Error             | Dyna-style              | MBPO           |      ✅       |         ✅          |  NIPS 2019  | [When to Trust Your Model: Model-Based Policy Optimization](https://arxiv.org/pdf/1906.08253.pdf) |
+| Higher Tolerance to Model Error | Dyna-style              | BMPO           |      ✅       |         ✅          |  ICML 2020  | [Bidirectional Model-based Policy Optimization](https://arxiv.org/pdf/2007.01995.pdf) |
+| Reduce  Model Error             | Dynamics Decomposition  | ED2            |      ✅       |         ✅          | In progress | [ED2: An Environment Dynamics Decomposition Framework for World Model Construction](https://arxiv.org/abs/2112.02817) |
+| Reduce  Model Error             | Planning                | PlaNet         |      ✅       |         ✅          |  ICML 2020  | [Learning Latent Dynamics for Planning from Pixels](https://arxiv.org/pdf/1811.04551.pdf) |
+| Faster Planning                 | Planning                | MuZero         |      ✅       |         ✅          |   Nature    | [Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model](https://arxiv.org/pdf/1911.08265.pdf) |
+| Faster Planning                 | Planning                | Sampled MuZero |      ❌       |         ❌          |  ICML 2021  | [Learning and Planning in Complex Action Spaces](http://arxiv.org/abs/2104.06303) |
+| Scalability to Harder Problems  | Dynamics generalization | CaDM           |      ✅       |         ✅          |  ICML 2020  | [Context-aware Dynamics Model for Generalization in Model-Based Reinforcement Learning](https://arxiv.org/pdf/2005.06800.pdf) |
+| Scalability to Harder Problems  | Dynamics generalization | TMCL           |      ❌       |         ❌          |  NIPS 2020  | [Trajectory-wise Multiple Choice Learning for Dynamics Generalization in Reinforcement Learning](https://arxiv.org/pdf/2010.13303.pdf) |
 
 # Method
 
@@ -100,7 +100,7 @@ Note that each algorithm may use only one or several environments in the ones li
 To clone this repo:
 
 ```
-git clone git@github.com:TJU-DRL-LAB/mbrl.git
+git clone git@github.com:TJU-DRL-LAB/modelbased-rl.git
 ```
 
 Note that this repo is a collection of multiple research branches (according to the taxonomy). 
@@ -131,6 +131,12 @@ Here is an example BibTeX:
   author={Wang, Cong and Yang, Tianpei and Hao, Jianye and Zheng, Yan and Tang, Hongyao and Barez, Fazl and Liu, Jinyi and Peng, Jiajie and Piao, Haiyin and Sun, Zhixiao},
   journal={arXiv preprint arXiv:2112.02817},
   year={2021}
+}
+@article{tjurllab22modelbasedrl,
+  author    = {TJU RL Lab},
+  title     = {A Unified Repo for Model-based Reinforcement Learning},
+  year      = {2022},
+  url       = {https://github.com/TJU-DRL-LAB/modelbased-rl},
 }
 ```
 
