@@ -118,6 +118,10 @@ Environments and code frameworks may differ among different branches. Thus, plea
 
 - [ ] Update the README files for each branch
 
+## Liscense
+
+This repo uses [MIT Liscense](https://github.com/TJU-DRL-LAB/self-supervised-rl/blob/main/LICENSE).
+
 ## Citation
 
 If you use our repo in your work, please cite the following: 
