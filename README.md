@@ -40,7 +40,7 @@ with the ultimate goal of establishing the ecology of SSRL, as illustrated below
 
 <div align=center><img align="center" src="./ssrl/assets/Ecology_of_SSRL.png" alt="Ecology of SSRL" style="zoom:40%;" /></div>
 
-See more [here](https://github.com/TJU-DRL-LAB/self-supervised-rl).
+See more [here](https://github.com/TJU-DRL-LAB/AI-Optimizer/self-supervised-rl).
 
 
 ## Transfer and Multi-task Reinforcement Learning
