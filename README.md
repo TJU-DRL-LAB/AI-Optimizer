@@ -38,9 +38,9 @@ Taking **Self-supervised Learning** (SSL) as our major paradigm for representati
 The central contribution of this repo is **A Unified Algorithmic Framework (Implementation Design) of SSRL Algorithm**,
 with the ultimate goal of establishing the ecology of SSRL, as illustrated below.
 
-<div align=center><img align="center" src="./ssrl/assets/Ecology_of_SSRL.png" alt="Ecology of SSRL" style="zoom:40%;" /></div>
+<div align=center><img align="center" src="./self-supervised-rl/assets/Ecology_of_SSRL.png" alt="Ecology of SSRL" style="zoom:40%;" /></div>
 
-See more [here](https://github.com/TJU-DRL-LAB/AI-Optimizer/self-supervised-rl).
+See more [here](https://github.com/TJU-DRL-LAB/AI-Optimizer/tree/main/self-supervised-rl).
 
 
 ## Transfer and Multi-task Reinforcement Learning
