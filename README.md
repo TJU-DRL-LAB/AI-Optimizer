@@ -6,7 +6,7 @@ AI-Optimizer now provides the following built-in libraries, and more libraries a
 - [Multiagent Reinforcement learning](multiagent-rl)
 - [Self-supervised Representation Reinforcement Learning](self-supervised-rl)
 - [Offline Reinforcement Learning](offline-rl-algorithms)
-- [Transfer Reinforcement Learning](https://github.com/TJU-DRL-LAB/transfer-and-multi-task-reinforcement-learning/tree/9dd05f2cec9dac0d78f78e96953f9fccdc5ac7a7)
+- [Transfer and Multi-task Reinforcement Learning](https://github.com/TJU-DRL-LAB/transfer-and-multi-task-reinforcement-learning/tree/9dd05f2cec9dac0d78f78e96953f9fccdc5ac7a7)
 - [Model-based Reinforcement Learning](modelbased-rl)
 
 ## Multiagent Reinforcement Learning (MARL)
@@ -55,7 +55,7 @@ Recently, Deep Reinforcement Learning (DRL) has achieved a lot of success in hum
 This repository contains the released codes of representative benchmarks and algorithms of TJU-RL-Lab on the topic of Transfer and Multi-task Reinforcement Learning, including the single-agent domain and multi-agent domain, addressing the sample-inefficiency problem in different ways.
 
 <p align="center"><img align="center" src="./images/overview.png" alt="overview" style="zoom:60%;" /></p>
-
+See more [here](https://github.com/TJU-DRL-LAB/transfer-and-multi-task-reinforcement-learning/tree/9dd05f2cec9dac0d78f78e96953f9fccdc5ac7a7).
 
 ## Model-based Reinforcement Learning (MBRL)
 This repo contains a unified opensource code implementation for the Model-Based Reinforcement Learning methods. MBRL-Lib provides implementations of popular MBRL algorithms as examples of using this library. The current classifications of the mainstream algorithms in the modern Model-Based RL area are orthogonal, which means some algorithms can be grouped into different categories according to different perspectives. From the mainstream viewpoint,  we can simply divide `Model-Based RL` into two categories: `How to Learn a Model` and `How to Utilize a Model`.
