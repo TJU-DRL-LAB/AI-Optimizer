@@ -7,7 +7,7 @@ AI-Optimizer now provides the following built-in libraries, and more libraries a
 - [Self-supervised Representation Reinforcement Learning](ssrl)
 - [Offline Reinforcement Learning](offline-rl-algorithms)
 - [Transfer Reinforcement Learning](transfer-and-multi-task-rl)
-- [Model-based reinforcement learning](modelbased-rl)
+- [Model-based Reinforcement Learning](modelbased-rl)
 
 ## Multiagent Reinforcement Learning (MARL)
 The Multiagent RL repo contains the released codes of representative research works of TJU-RL-Lab on Multiagent Reinforcement Learning (MARL). The research topics are classified according to the critical challenges of MARL, e.g., the curse of dimensionality (scalability) issue, non-stationarity, multiagent credit assignment, exploration-exploitation tradeoff, and hybrid action. To solve these challenges, we propose a series of algorithms from a different point of view. A big picture is shown below.
