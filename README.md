@@ -44,7 +44,7 @@ SSRL repo contains the released codes of representative research works of TJU-RL
 Since the RL agent always _receives_, _processes_, and _delivers_ all kinds of data in the learning process (i.e., the typical Agent-Environment Interface), 
 how to **properly represent such "data"** is naturally the key point to the effectiveness and efficiency of RL.
 
-In this branch, we focus on three key questions as follows:
+In this branch, we focus on **three key questions** as follows:
 - **What should a good representation for RL be? (Theory)** 
 - **How can we obtain or realize such good representations? (Methodology)**
 - **How can we making use of good representations to improve RL? (Downstream Learning Tasks & Application)**
@@ -55,6 +55,11 @@ Taking **Self-supervised Learning** (SSL) as our major paradigm for representati
 **Action Representation**,
 **Policy Representation**,
 **Environment (and Task) Representation**.
+
+These four pespectives are major elements involved in general _Agent-Environment Interface_ of RL.
+They play the roles of _input_, _optimization target_ and etc. in the process of RL.
+The representation of these elements make a great impact on the sample efficiency, convergence optimality and cross-enviornment generalization.
+
 
 ### 🌏 Contribution & Impact
 The central contribution of this repo is **A Unified Algorithmic Framework (Implementation Design) of SSRL Algorithm**,
