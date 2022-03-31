@@ -60,14 +60,17 @@ These four pespectives are major elements involved in general _Agent-Environment
 They play the roles of _input_, _optimization target_ and etc. in the process of RL.
 The representation of these elements make a great impact on the sample efficiency, convergence optimality and cross-enviornment generalization.
 
-
-### 🌏 Contribution & Impact
+### 💦 Contribution
 The central contribution of this repo is **A Unified Algorithmic Framework (Implementation Design) of SSRL Algorithm**,
 with the ultimate goal of establishing the ecology of SSRL, as illustrated below.
 
 <div align=center><img align="center" src="./self-supervised-rl/assets/Ecology_of_SSRL.png" alt="Ecology of SSRL" style="zoom:40%;" /></div>
 
 See more [here](https://github.com/TJU-DRL-LAB/AI-Optimizer/tree/main/self-supervised-rl).
+
+### 🌏 Intention & Impact
+
+
 
 
 ## Transfer and Multi-task Reinforcement Learning
