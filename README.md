@@ -70,7 +70,8 @@ See more [here](https://github.com/TJU-DRL-LAB/AI-Optimizer/tree/main/self-super
 
 ### 🌏 Intention & Impact
 
-
+For cutting-edge RL researchers, we expect that our research thoughts and proposed SSRL framework can open up some new angles of more advanced RL.
+For RL participators (especially who work on related fields), we hope that our opensource works and codes may be helpful and inspiring.
 
 
 ## Transfer and Multi-task Reinforcement Learning
