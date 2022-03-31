@@ -17,7 +17,24 @@ The Multiagent RL repo contains the released codes of representative research wo
 
 
 ## Offline-rl-algorithms (Offrl)
-Offline Reinforcement Learning (Offline RL), also known as Batch Reinforcement Learning (BRL), is a variant of Reinforcement Learning that requires an agent to learn to perform tasks from a fixed dataset without exploration. We plan to establish the ecology of Offline RL in the future. Driven by three critical challenges of Offline RL, we are working on research to address them respectively. For the limited data problem in Offline RL, we are working on designing different data augmentation techniques to expand the original datasets. Besides, we are designing multimodal datasets, which are more in line with the real world. For the overestimation problem in existing Offline RL methods, we plan to develop a unified algorithmic framework and a unified opensource code-level implementation framework. Finally, our ultimate goal is to land Offline RL methods in real-world decision-making scenarios by further investigating the offline to the online training regime.
+Current deep RL methods still typically rely on active data collection to succeed, hindering their application in the real world especially when the data collection is dangerous or expensive.  Offline RL (also known as batch RL) is a data-driven RL paradigm concerned with learning exclusively from static datasets of previously-collected experiences. In this setting, a behavior policy interacts with the environment to collect a set of experiences, which can later be used to learn a policy without further interaction. This paradigm can be extremely valuable in settings where online interaction is impractical. 
+
+This repository contains the codes of representative benchmarks and algorithms on the topic of Offline Reinforcement Learning. The repository is developed based on d3rlpy(https://github.com/takuseno/d3rlpy) following MIT license, while inheriting its advantages, the additional features include (or will be included):
+ - A unified algorithm framework with more algorithms
+  - REDQ
+  - UWAC
+  - BRED
+  - …
+ - More datasets:
+  - Real-world industrial datasets
+  - Multimodal datasets
+  - Augmented datasets (and corresponding methods)
+  - Datasets obtained using representation learning (and corresponding methods)
+ - More log systems 
+  - Wandb
+  
+
+
 ![Ecology of Offline RL](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/Ecology%20of%20Offline%20RL.png)
 
 ## Self-supervised Reinforcement Learning (SSRL)
