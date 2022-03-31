@@ -1,7 +1,9 @@
 # MBRL-Lib
 
 ![pic](README.assets/pic.jpeg)
-This repo contains a unified opensource code implementation for the Model-Based  Reinforcement Learning methods.(@TJU). MBRL-Lib provides implementations of popular MBRL algorithms as examples of how to use this library. You can find them in the MBRL-Lib folder. Currently, we have implemented Dreamer, MBPO, MuZero, we plan to keep increasing this list in the future. **We present one of the most comprehensive Model-Based  library so far , which covered most mainstream algorithms in Model-Based RL area.** This repo will be constantly updated to include new researches made by TJU-RL-Lab. (The development of this repo is in progress at present.)
+This repo contains a unified opensource code implementation for the Model-Based  Reinforcement Learning methods.(@TJU). MBRL-Lib provides implementations of popular MBRL algorithms as examples of how to use this library. You can find them in the MBRL-Lib folder. We have collected some of the mainstream MBRL algorithms and made some code-level optimizations. Bringing these algorithms together in a unified framework can save the researchers time in finding comparative baselines without the need to search around for implementations. Currently, we have implemented Dreamer, MBPO,BMPO, MuZero, PlaNet, SampledMuZero, CaDM and we plan to keep increasing this list in the future.  We will constantly update this repo to include new research made by TJU-DRL-Lab to ensure sufficient coverage and reliability. **We hope in the future to present one of the most comprehensive Model-Based library so far , which covered most mainstream algorithms in Model-Based RL area.** What' more, We want to cover as many interesting new directions as possible, and then divide it into the topic we listed above, to give you some inspiration and ideas for your RESEARCH. This repo will be constantly updated to include new researches made by TJU-RL-Lab. (The development of this repo is in progress at present.)
+
+## 
 
 ## Introduction
 
