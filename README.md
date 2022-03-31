@@ -40,7 +40,7 @@ This repository contains the codes of representative benchmarks and algorithms o
 ## Self-supervised Reinforcement Learning (SSRL)
 SSRL repo contains the released codes of representative research works of TJU-RL-Lab on Self-supervised Representation Learning for RL. 
 
-### Problem to Solve
+### ❓ Problem to Solve
 Since the RL agent always _receives_, _processes_, and _delivers_ all kinds of data in the learning process (i.e., the typical Agent-Environment Interface), 
 how to **properly represent such "data"** is naturally the key point to the effectiveness and efficiency of RL.
 
@@ -49,14 +49,14 @@ In this branch, we focus on three key questions as follows:
 - **How can we obtain or realize such good representations? (Methodology)**
 - **How can we making use of good representations to improve RL? (Downstream Learning Tasks & Application)**
 
-### Core Idea
+### ⭐️ Core Idea
 Taking **Self-supervised Learning** (SSL) as our major paradigm for representation learning, we carry out our studies from four perspectives: 
 **State Representation**,
 **Action Representation**,
 **Policy Representation**,
 **Environment (and Task) Representation**.
 
-### Contribution
+### 🌏 Contribution & Impact
 The central contribution of this repo is **A Unified Algorithmic Framework (Implementation Design) of SSRL Algorithm**,
 with the ultimate goal of establishing the ecology of SSRL, as illustrated below.
 
