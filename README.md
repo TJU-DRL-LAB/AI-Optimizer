@@ -38,20 +38,25 @@ This repository contains the codes of representative benchmarks and algorithms o
 ![Ecology of Offline RL](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/Framework%20of%20Offline%20RL.png)
 
 ## Self-supervised Reinforcement Learning (SSRL)
-SSRL repo contains the released codes of representative research works of TJU-RL-Lab on Self-supervised Representation Learning for RL. Since the RL agent always receives, processes, and delivers all kinds of data in the learning process (i.e., the typical Agent-Environment Interface), 
-how to **properly represent such "data"** is naturally one key point to the effectiveness and efficiency of RL.
+SSRL repo contains the released codes of representative research works of TJU-RL-Lab on Self-supervised Representation Learning for RL. 
 
-In this branch, we focus on three key questions:
-- **What should a good representation for RL be?**
-- **How can we obtain or realize such good representations?**
-- **How can we making use of good representations to improve RL?**
+### Problem to Solve
+Since the RL agent always _receives_, _processes_, and _delivers_ all kinds of data in the learning process (i.e., the typical Agent-Environment Interface), 
+how to **properly represent such "data"** is naturally the key point to the effectiveness and efficiency of RL.
 
+In this branch, we focus on three key questions as follows:
+- **What should a good representation for RL be? (Theory)** 
+- **How can we obtain or realize such good representations? (Methodology)**
+- **How can we making use of good representations to improve RL? (Downstream Learning Tasks & Application)**
+
+### Core Idea
 Taking **Self-supervised Learning** (SSL) as our major paradigm for representation learning, we carry out our studies from four perspectives: 
 **State Representation**,
 **Action Representation**,
 **Policy Representation**,
 **Environment (and Task) Representation**.
 
+### Contribution
 The central contribution of this repo is **A Unified Algorithmic Framework (Implementation Design) of SSRL Algorithm**,
 with the ultimate goal of establishing the ecology of SSRL, as illustrated below.
 
