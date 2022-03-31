@@ -12,6 +12,7 @@ AI-Optimizer now provides the following built-in libraries, and more libraries a
 ## Multiagent Reinforcement Learning (MARL)
 The Multiagent RL repo contains the released codes of representative research works of TJU-RL-Lab on Multiagent Reinforcement Learning (MARL). The research topics are classified according to the critical challenges of MARL, e.g., the curse of dimensionality (scalability) issue, non-stationarity, multiagent credit assignment, exploration-exploitation tradeoff, and hybrid action. To solve these challenges, we propose a series of algorithms from a different point of view. A big picture is shown below.
 
+
 <p align="center"><img align="center" src="./multiagent-rl/assets/our-work.png" alt="our solutions"  /></p>
 
 
@@ -65,6 +66,12 @@ The central contribution of this repo is **A Unified Algorithmic Framework (Impl
 The framework provides a unified interpretation for almost all currently existing SSRL algorithms. Moreover, the framework can also serve as a paradigm when we are going to devise new methods.
 
 Our ultimate goal is to promote the establishment of the ecology of SSRL, which is illustrated below.
+
+Towards addressing the key problems of RL,
+we study SSRL with four types of representations.
+For researches from all four pespectives, a unified framework of algorithm and imeplementation serves as the underpinnings.
+The representations studied from different pespectives further boost various downstream RL tasks.
+Finally, this promotes the deployment and landing of RL in real-world applications.
 
 <div align=center><img align="center" src="./self-supervised-rl/assets/Ecology_of_SSRL.png" alt="Ecology of SSRL" style="zoom:40%;" /></div>
 
