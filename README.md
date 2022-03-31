@@ -70,8 +70,13 @@ See more [here](https://github.com/TJU-DRL-LAB/AI-Optimizer/tree/main/self-super
 
 ### 🌏 Intention & Impact
 
-For cutting-edge RL researchers, we expect that our research thoughts and proposed SSRL framework can open up some new angles of more advanced RL.
+With this repo and our research works, we want to draw the attention of RL community to studies on Self-supervised Representation Learning for RL.
+
+For people who are insterested in RL, our introduction in this repo and our [blogs](https://zhuanlan.zhihu.com/p/413321572) can be a preliminary tutorial.
+For cutting-edge RL researchers, we expect that our research thoughts and proposed SSRL framework can open up some new angles for future works on more advanced RL.
 For RL participators (especially who work on related fields), we hope that our opensource works and codes may be helpful and inspiring.
+
+We are also looking forward to feedback in any form to promote more in-depth researches.
 
 
 ## Transfer and Multi-task Reinforcement Learning
