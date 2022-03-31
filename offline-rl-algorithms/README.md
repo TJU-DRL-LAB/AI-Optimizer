@@ -27,7 +27,7 @@ For a tutorial of this taxnomy, we refer the reader to our [ZhiHu blog series](h
 
 We plan to establish the ecology of Offline RL in the future. Driven by three key challenges of Offline RL, we are working on researches to address them respectivly. For the limited data problem in Offline RL, we are working on desgin different data augmentation techniques to expand the orginal datasets. Besides, we are designing the multimodal datasets, which is more in line with the real world.  For the overestimation problem in existing Offline RL methods, we plan to develop a unified algorithmic framework together with a unified opensource code-level implementation framework. Finally, our ultimate goal is to land Offline RL methods in real-world decision-making scenarios by further investigating the offline to online training regime.
 
-![Ecology of Offline RL](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/Ecology%20of%20Offline%20RL.png)
+![Ecology of Offline RL](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/Framework%20of%20Offline%20RL.png)
 
 ## Installation
 
