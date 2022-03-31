@@ -35,7 +35,7 @@ This repository contains the codes of representative benchmarks and algorithms o
   
 
 
-![Ecology of Offline RL](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/Ecology%20of%20Offline%20RL.png)
+![Ecology of Offline RL](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/Framework%20of%20Offline%20RL.png)
 
 ## Self-supervised Reinforcement Learning (SSRL)
 SSRL repo contains the released codes of representative research works of TJU-RL-Lab on Self-supervised Representation Learning for RL. Since the RL agent always receives, processes, and delivers all kinds of data in the learning process (i.e., the typical Agent-Environment Interface), 
