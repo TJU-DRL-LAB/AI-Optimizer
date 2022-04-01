@@ -11,10 +11,12 @@ Reinforcement learning algorithms can be divided into two main categories: **the
 
 ![image-20220316113418281](README.assets/image-20220316113418281.png)
 
-The model of the environment is a representation model that explicitly contains knowledge about the environment or the task, and generally two types of models are included: a transition model or a dynamics model and the reward model. Once this model is modeled, it can be properly integrated into the interaction with the environment and the learning of strategies, as shown in the above figure. There are many different ways to classify the mainstream algorithms in the modern Model-Based RL area. From the mainstream viewpoint,  we can simply divide `Model-Based RL` into two categories: `How to Learn a Model` and `How to Utilize a Model`.
+The model of the environment is a representation model that explicitly contains knowledge about the environment or the task, and generally two types of models are included: a transition model or a dynamics model and the reward model. Once this model is modeled, it can be properly integrated into the interaction with the environment and the learning of strategies, as shown in the above figure. 
+### Problems to Solve
+
+The current classifications of the mainstream algorithms in the modern Model-Based RL area are orthogonal, which means some algorithms can be grouped into different categories according to different perspectives. In this branch, we focus on two key questions  :`How to Learn a Model` and `How to Utilize a Model`.
 
 - `How to Learn a Model` mainly focuses on how to build the environment model. 
-
 - `How to Utilize a Model` cares about how to utilize the learned model. 
 
 From the perspective of action execution, we can also divide `Model-Based RL` into two categories: `policy learning` and `planning`. 
@@ -25,11 +27,15 @@ From the perspective of action execution, we can also divide `Model-Based RL` in
 
 There are many other classifications and we can list some of them here. From the perspective of the dynamics model, we can divide dynamics models into three categories:`forward model`、`reverse/backward model,` and `inverse model`. From the perspective of the estimation method, the methods can be categorized as`parametric ` and `non-parametric` or `exact` and `approximate`. From the perspective of planning updating, the methods can be categorized as `value update ` and `policy update`.
 
+### Core Directions
+
 The current classifications of the mainstream algorithms in the modern Model-Based RL area are orthogonal, which means some algorithms can be grouped into different categories according to different perspectives. It’s quite hard to draw an accurate taxonomy of algorithms in the Model-Based RL area.  **So we think it would be more appropriate to give the algorithm to a specific topic rather than a simple classification.** Ignoring the differences in specific methods, the purpose of MBRL algorithms can be more finely divided into four directions as follows: `Reduce Model Error`、`Faster Planning`、` Higher Tolerance to Model Error` 、`Scalability to Harder Problems`.  For the problem of `How to Learn a Model`, we can study reducing model error to learn a more accurate world model or learning a world model with higher tolerance to model error. For the problem of `How to Utilize a Model`, we can study faster planning with a learned model or the scalability of the learned model to harder problems.  
 
 ![](./README.assets/MBRL_framework.png)
 
-Moreover, we will publish a series of related blogs to explain more Model-Based RL algorithms. For a more detailed tutorial of this taxonomy, we refer the reader to our [ZhiHu blog series](https://zhuanlan.zhihu.com/p/425318401).
+### Key Features
+
+Research in model-based RL has not been very standardized. It is fairly common for authors to experiment with self-designed environments, and there are several separate lines of research, which are sometimes closed-sourced or not reproducible. And for this, we have collected some of the mainstream MBRL algorithms and made some code-level optimizations. Bringing these algorithms together in a unified framework can save the researchers time in finding comparative baselines without the need to search around for implementations. Currently, we have implemented Dreamer, MBPO,BMPO, MuZero, PlaNet, SampledMuZero, CaDM and we plan to keep increasing this list in the future.  We will constantly update this repo to include new research made by TJU-DRL-Lab to ensure sufficient coverage and reliability. **What' more, We want to cover as many interesting new directions as possible, and then divide it into the topic we listed above, to give you some inspiration and ideas for your RESEARCH.** Moreover, we will publish a series of related blogs to explain more Model-Based RL algorithms. For a more detailed tutorial of this taxonomy, we refer the reader to our [ZhiHu blog series](https://zhuanlan.zhihu.com/p/425318401).
 
 ## An Overall View of Research Works in This Repo
 
