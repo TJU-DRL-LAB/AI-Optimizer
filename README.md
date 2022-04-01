@@ -44,8 +44,10 @@ The main contribution of this repository is that we release a serials of efficie
 
 
 ## Offline-rl-algorithms (Offrl)
+### ❓ Problem to Solve
 Current deep RL methods still typically rely on active data collection to succeed, hindering their application in the real world especially when the data collection is dangerous or expensive.  Offline RL (also known as batch RL) is a data-driven RL paradigm concerned with learning exclusively from static datasets of previously-collected experiences. In this setting, a behavior policy interacts with the environment to collect a set of experiences, which can later be used to learn a policy without further interaction. This paradigm can be extremely valuable in settings where online interaction is impractical. 
 
+### 💦 Contribution
 This repository contains the codes of representative benchmarks and algorithms on the topic of Offline Reinforcement Learning. The repository is developed based on d3rlpy(https://github.com/takuseno/d3rlpy) following MIT license, while inheriting its advantages, the additional features include (or will be included):
  - A unified algorithm framework with more algorithms
    - REDQ
