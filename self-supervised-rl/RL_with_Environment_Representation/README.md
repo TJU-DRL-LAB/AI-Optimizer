@@ -37,3 +37,19 @@ Note that the algorithms contained in this repo may not use all the same environ
 ## Related Work
 
 Here we provide a useful list of representative related works on environment (or task) representation in RL.
+
+### Context Representation of Environments
+- Kate Rakelly, Aurick Zhou, Chelsea Finn, Sergey Levine, Deirdre Quillen. Efficient Off-Policy Meta-Reinforcement Learning via Probabilistic Context Variables. ICML 2019 
+- Haotian Fu, Hongyao Tang, Jianye Hao, Chen Chen, Xidong Feng, Dong Li, Wulong Liu. Towards Effective Context for Meta-Reinforcement Learning: an Approach based on Contrastive Learning. AAAI 2021
+- Kimin Lee, Younggyo Seo, Seunghyun Lee, Honglak Lee, Jinwoo Shin. Context-aware Dynamics Model for Generalization in Model-Based Reinforcement Learning. ICML 2020
+- Bernie Wang, Simon Xu, Kurt Keutzer, Yang Gao, Bichen Wu. Improving Context-Based Meta-Reinforcement Learning with Self-Supervised Trajectory Contrastive Learning. arXiv:2103.06386
+- Wenxuan Zhou, Lerrel Pinto, Abhinav Gupta. Environment Probing Interaction Policies. ICLR (Poster) 2019
+
+### Others (Reward Functions, Goals and others)
+- Roberta Raileanu, Max Goldstein, Arthur Szlam, Rob Fergus. Fast Adaptation via Policy-Dynamics Value Functions. ICML 2020
+- Yujing Hu, Weixun Wang, Hangtian Jia, Yixiang Wang, Yingfeng Chen, Jianye Hao, Feng Wu, Changjie Fan. Learning to Utilize Shaping Rewards: A New Approach of Reward Shaping. NIPS 2020
+- Daniel S. Brown, Wonjoon Goo, Prabhat Nagarajan, Scott Niekum. Extrapolating Beyond Suboptimal Demonstrations via Inverse Reinforcement Learning from Observations. ICML 2019
+- Alexander C. Li, Lerrel Pinto, Pieter Abbeel. Generalized Hindsight for Reinforcement Learning.  NIPS 2020
+
+
+
