@@ -6,7 +6,7 @@ Batch-Constrained deep Q-learning (BCQ) [1] is a batch reinforcement learning me
 $$
 \mathcal{L}(\theta)=\sum_{k}\left(r+\gamma \max _{\hat{a}}\left(\lambda \min _{k^{\prime}} Q_{\theta^{\prime}}^{k^{\prime}}\left(s^{\prime}, \hat{a}\right)+(1-\lambda) \max _{k^{\prime}} Q_{\theta^{\prime}}^{k^{\prime}}\left(s^{\prime}, \hat{a}\right)\right)-Q_{\theta}^{k}(s, a)\right)^{2}
 $$
-where $\hat{a}=a_{i}+\xi_{\phi}\left(s^{\prime}, a_{i}\right), \quad a_{i} \sim G_{\omega}\left(s^{\prime}\right).$ During evaluation, the policy is defined similarly, by sampling $N$ actions from the generative model, perturbing them and selecting the argmax:
+where ![](https://latex.codecogs.com/svg.latex?\\pi(s)=\\underset{\\hat{a}=a_{i}&plus;\\xi_{\phi}\\left(s^{\prime},&space;a_{i}\\right)}{\\operatorname{argmax}}&space;Q_{\\theta}^{0}(s,&space;\\hat{a}),&space;\\quad&space;a_{i}&space;\\sim&space;G_{\\omega}(s)&space;.$\\hat{a}=a_{i}&plus;\\xi_{\phi}\\left(s^{\\prime},&space;a_{i}\\right),&space;\\quad&space;a_{i}&space;\\sim&space;G_{\\omega}\\left(s^{\\prime}\\right).$) During evaluation, the policy is defined similarly, by sampling $N$ actions from the generative model, perturbing them and selecting the argmax:
 
 <div align=center><img src="https://latex.codecogs.com/svg.image?\pi(s)=\underset{\hat{a}=a_{i}&plus;\xi_{\phi}\left(s^{\prime},&space;a_{i}\right)}{\operatorname{argmax}}&space;Q_{\theta}^{0}(s,&space;\hat{a}),&space;\quad&space;a_{i}&space;\sim&space;G_{\omega}(s)&space;." title="https://latex.codecogs.com/svg.image?\pi(s)=\underset{\hat{a}=a_{i}+\xi_{\phi}\left(s^{\prime}, a_{i}\right)}{\operatorname{argmax}} Q_{\theta}^{0}(s, \hat{a}), \quad a_{i} \sim G_{\omega}(s) ." /></div>
 
