@@ -14,15 +14,18 @@ Therefore, the aim of study on action representation is to find a better represe
 ## Repo Content
 
 This repo contains representative research works of TJU-RL-Lab on the topic of RL with Action Representation.
-Currently, we focus on how to learn good action representation which can boost RL in complex action space, by following the illustration below:
+Currently, we focus on how to learn good action representation which can **boost RL in complex action space**.
 
+### Learning in Latent Action Space
+
+We use the following illustration to demonstrate a general paradigm of RL with Action Representation:
 
 <div align=center><img align="center" src="./../assets/ar_readme_figs/ar_framework.png" alt="action_representation_framework" style="zoom:20%;" /></div>
 
 This illustration is originated from [Chandak et al. (ICML 2019)](http://proceedings.mlr.press/v97/chandak19a.html). 
 Given a policy representation space, the illustration depicts the paradigme of latent policy learning, with the help of a _reversible_ action representation space.
 
-We use this illustration to demonstrate a general paradigm of RL with Action Representation.
+
 
 ## An Overall View of Research Works in This Repo  
 
@@ -41,12 +44,12 @@ The algorithms in this repo are all implemented **python 3.5** (and versions abo
 Note that the algorithms contained in this repo may not use all the same environments. Please check the README of specific algorithms for detailed installation guidance.
 
 ## TODO
-- [ ] Update README file for HyAR
+- [x] Update README file for HyAR
 - [ ] Tidy up code of HyAR
 
 ## Related Work
 
-Here we provide a useful list of representative related works on policy representation and policy-extended value functions.
+Here we provide a useful list of representative related works on action representation and complex action space RL.
 
 - Boyan Li, Hongyao Tang, Yan Zheng, Jianye Hao, Pengyi Li, Zhen Wang, Zhaopeng Meng, Li Wang. HyAR: Addressing Discrete-Continuous Action Reinf
 orcement Learning via Hybrid Action Representation. ICLR 2022
