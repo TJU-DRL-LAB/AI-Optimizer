@@ -8,7 +8,7 @@ $$
 $$
 where $\hat{a}=a_{i}+\xi_{\phi}\left(s^{\prime}, a_{i}\right), \quad a_{i} \sim G_{\omega}\left(s^{\prime}\right).$ During evaluation, the policy is defined similarly, by sampling $N$ actions from the generative model, perturbing them and selecting the argmax:
 
-<div align=center><img src="https://latex.codecogs.com/svg.image?\pi(s)=\underset{\hat{a}=a_{i}&plus;\xi_{\phi}\left(s^{\prime},&space;a_{i}\right)}{\operatorname{argmax}}&space;Q_{\theta}^{0}(s,&space;\hat{a}),&space;\quad&space;a_{i}&space;\sim&space;G_{\omega}(s)&space;." title="https://latex.codecogs.com/svg.image?\pi(s)=\underset{\hat{a}=a_{i}+\xi_{\phi}\left(s^{\prime}, a_{i}\right)}{\operatorname{argmax}} Q_{\theta}^{0}(s, \hat{a}), \quad a_{i} \sim G_{\omega}(s) ." />
+<div align=center><img src="https://latex.codecogs.com/svg.image?\pi(s)=\underset{\hat{a}=a_{i}&plus;\xi_{\phi}\left(s^{\prime},&space;a_{i}\right)}{\operatorname{argmax}}&space;Q_{\theta}^{0}(s,&space;\hat{a}),&space;\quad&space;a_{i}&space;\sim&space;G_{\omega}(s)&space;." title="https://latex.codecogs.com/svg.image?\pi(s)=\underset{\hat{a}=a_{i}+\xi_{\phi}\left(s^{\prime}, a_{i}\right)}{\operatorname{argmax}} Q_{\theta}^{0}(s, \hat{a}), \quad a_{i} \sim G_{\omega}(s) ." /></div>
 
 ## 2. Instruction
 
