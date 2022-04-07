@@ -11,7 +11,7 @@ where ![](https://latex.codecogs.com/svg.latex?\\hat{a}&space;\\sim&space;\\pi_{
 
 <div align=center><img src="https://latex.codecogs.com/svg.image?\mathcal{L}(\theta)=\sum_{k}\left(r&plus;\gamma&space;\max&space;_{\hat{a}&space;\sim&space;\pi_{\phi}\left(s^{\prime}\right)}\left(\lambda&space;\min&space;_{k^{\prime}}&space;Q_{\theta^{\prime}}^{k^{\prime}}\left(s^{\prime},&space;\hat{a}\right)&plus;(1-\lambda)&space;\max&space;_{k^{\prime}}&space;Q_{\theta^{\prime}}^{k^{\prime}}\left(s^{\prime},&space;\hat{a}\right)\right)-Q_{\theta}^{k}(s,&space;a)\right)^{2}" title="https://latex.codecogs.com/svg.image?\mathcal{L}(\theta)=\sum_{k}\left(r+\gamma \max _{\hat{a} \sim \pi_{\phi}\left(s^{\prime}\right)}\left(\lambda \min _{k^{\prime}} Q_{\theta^{\prime}}^{k^{\prime}}\left(s^{\prime}, \hat{a}\right)+(1-\lambda) \max _{k^{\prime}} Q_{\theta^{\prime}}^{k^{\prime}}\left(s^{\prime}, \hat{a}\right)\right)-Q_{\theta}^{k}(s, a)\right)^{2}" /></div>
 
-The policy used during evaluation is defined similarly to $\mathrm{BCQ}$, but again samples actions directly from the actor:
+The policy used during evaluation is defined similarly to BCQ}, but again samples actions directly from the actor:
 
 <div align=center>
 <img src="https://latex.codecogs.com/svg.image?\pi(s)=\underset{\hat{a}}{\operatorname{argmax}}&space;\frac{1}{K}&space;\sum_{k}&space;Q_{\theta}^{k}(s,&space;\hat{a}),&space;\quad&space;\hat{a}&space;\sim&space;\pi_{\phi}(s)." title="https://latex.codecogs.com/svg.image?\pi(s)=\underset{\hat{a}}{\operatorname{argmax}} \frac{1}{K} \sum_{k} Q_{\theta}^{k}(s, \hat{a}), \quad \hat{a} \sim \pi_{\phi}(s)." />
