@@ -1,16 +1,31 @@
 # RL with Environment Representation
 
 Environment Representation is one major category in our taxonomy. 
+The core research content of environment representation is to capture the **variations of environments** from the distribution of interests. Such variations can be the inner factors that determine the dynamics, reward functions and other aspects of MDP.
 
-# To update below
-
-The core research content of environment representation is to capture the **variations of environments** from the distribution of interests.
+Since these factors are usually inaccessable directly, to achieve the purpose of **generalizing well and staying robust in face of such changing variations**, environment representation is learned to infer the underlying factors from accessible data (e.g., interaction experiences).
 
 ## Repo Content
 
 This repo contains representative research works of TJU-RL-Lab on the topic of RL with Environment Representation.
 
+### Context-based Environment Representation and Generalization
+
+As mentioned above, we aim at learning good representations of underlying variations of environments with accessible data.
+Obviously, a reasonable type of such data is transition experiences {s,a,r,s'}, also called _context_, collected during the interaction of RL agent in the environment,
+since interaction experiences can implicitly reflect the information of environment characteristics, i.e., specific underlying variations. 
+
+We provide a conceptual illustration of Context-based Environment Representation and Generalization below:
+
 <div align=center><img align="center" src="./../assets/er_readme_figs/ER_framework.png" alt="environment_representation_framework" style="zoom:20%;" /></div>
+
+The representations of environment are learned by encoding context data and extracting information according to specific context learning objectives.
+Afterwards, Context-conditioned RL functions, e.g., 𝑄(𝑠,𝑎,𝑧), 𝜋(⋅|𝑠,𝑧) are trained, to make the RL agent aware of the environment representation (i.e., variations ideally).
+Therefore, with such context-conditioned RL functions, implicit generalization or explicit adaptation among environments can be carried out.
+
+
+
+
 
 ## An Overall View of Research Works in This Repo  
 
@@ -20,7 +35,7 @@ This repo will be constantly updated to include new researches made by TJU-RL-La
 | Method | Is Contained | Is ReadME Prepared | Author | Publication | Link |
 | ------ | --- | --- | ------ | ------ | ------ |
 | CCM | ❌ | ❌ |Haotian Fu | AAAI 2021 | https://ojs.aaai.org/index.php/AAAI/article/view/16914 |
-| PAnDR |❌ | ❌ |Tong Sang| [ICLR 2022 GPL Workshop](https://ai-workshops.github.io/generalizable-policy-learning-in-the-physical-world/) | N/A |
+| PAnDR |✅ | ❌ |Tong Sang| [ICLR 2022 GPL Workshop](https://ai-workshops.github.io/generalizable-policy-learning-in-the-physical-world/) | https://arxiv.org/abs/2204.02877 |
 
 
 ## Installation
@@ -50,6 +65,7 @@ Here we provide a useful list of representative related works on environment (or
 - Yujing Hu, Weixun Wang, Hangtian Jia, Yixiang Wang, Yingfeng Chen, Jianye Hao, Feng Wu, Changjie Fan. Learning to Utilize Shaping Rewards: A New Approach of Reward Shaping. NIPS 2020
 - Daniel S. Brown, Wonjoon Goo, Prabhat Nagarajan, Scott Niekum. Extrapolating Beyond Suboptimal Demonstrations via Inverse Reinforcement Learning from Observations. ICML 2019
 - Alexander C. Li, Lerrel Pinto, Pieter Abbeel. Generalized Hindsight for Reinforcement Learning.  NIPS 2020
+
 
 
 
