@@ -6,10 +6,9 @@ AWAC (advantage weighted actor critic) is an algorithm that combines sample-effi
 
 <img src=".\img\awac.png" alt="img" style="zoom:80%;" />
 
-In a practical implementation, we can parameterize the actor and the critic by neural networks and perform SGD updates from 
-$$
-\theta_{k+1}=\mathop{argmax}\limits_\theta \mathop{\mathbb{E}}_{s,a\sim\beta}[log\pi_{\theta}(a|s)exp(\frac1\lambda A^{\pi_k}(s,a))]
-$$
+In a practical implementation, we can parameterize the actor and the critic by neural networks and perform SGD updates from
+
+<div align=center><img src="https://latex.codecogs.com/svg.image?\theta_{k&plus;1}=\mathop{argmax}\limits_\theta&space;\mathop{\mathbb{E}}_{s,a\sim\beta}[log\pi_{\theta}(a|s)exp(\frac1\lambda&space;A^{\pi_k}(s,a))]" title="https://latex.codecogs.com/svg.image?\theta_{k+1}=\mathop{argmax}\limits_\theta \mathop{\mathbb{E}}_{s,a\sim\beta}[log\pi_{\theta}(a|s)exp(\frac1\lambda A^{\pi_k}(s,a))]" /></div>
 
 and
 
