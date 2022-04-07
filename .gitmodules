@@ -4,3 +4,6 @@
 [submodule "cornerstone"]
 	path = cornerstone
 	url = https://github.com/TJU-DRL-LAB/cornerstone.git
+[submodule "transfer-and-multi-task-reinforcement-learning"]
+	path = transfer-and-multi-task-reinforcement-learning
+	url = https://github.com/TJU-DRL-LAB/transfer-and-multi-task-reinforcement-learning.git
