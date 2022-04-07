@@ -4,7 +4,7 @@
 
 AWAC (advantage weighted actor critic) is an algorithm that combines sample-efficient dynamic programming with maximum likelihood policy updates, providing a simple and effective framework that is able to leverage large amounts of offline data and then quickly perform online fine-tuning of RL policies,  in order to reach expert-level performance after collecting a limited amount of interaction data. The full AWAC algorithm for offline RL with online fine-tuning is summarized in Algorithm 1. 
 
-<img src=".\img\awac.png" alt="img" style="zoom:80%;" />
+<div align=center><img src=".\img\awac.png" alt="img" style="zoom:80%;" /></div>
 
 In a practical implementation, we can parameterize the actor and the critic by neural networks and perform SGD updates from
 
