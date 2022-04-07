@@ -12,14 +12,13 @@ In a practical implementation, we can parameterize the actor and the critic by n
 
 and
 
-$$
-\phi_k=\mathop{argmin}\limits_\phi \mathbb{E}_D[(Q_\phi(s,a)-y)^2]
-$$
+<div align=center><img src="https://latex.codecogs.com/svg.image?\phi_k=\mathop{argmin}\limits_\phi&space;\mathbb{E}_D[(Q_\phi(s,a)-y)^2]" title="https://latex.codecogs.com/svg.image?\phi_k=\mathop{argmin}\limits_\phi \mathbb{E}_D[(Q_\phi(s,a)-y)^2]" /></div>
+
 AWAC ensures data efficiency with off-policy critic estimation via bootstrapping, and avoids offline bootstrap error with a constrained actor update. By avoiding explicit modeling of the behavior policy, AWAC avoids overly conservative updates. 
 
 ## 2. Instruction
 
-```shell
+```
 python awac-train.py --dataset=HalfCheetah-v2 --seed=0 --gpu=0
 ```
 
