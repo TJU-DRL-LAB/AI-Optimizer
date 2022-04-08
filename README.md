@@ -21,12 +21,14 @@ Multi-agent reinforcement learning (MARL) has successfully addressed many comple
 - **The curse of dimensionality (scalability) issue**
 - **Non-stationarity**
 - **Non-Unique Learning Goals**
-- **Partial observability**
 - **Exploration–exploitation tradeoff**
 - **Multiagent credit assignment problem**
+- **Partial observability**
 - **Hybrid action**
 
-Our target is to design <font color="red">**more efficient, more scalable** </font> and<font color="red"> **much easier to use**</font> MARL algorithms which could solve or alleviate the problems mentioned above and promote the deployment and landing of MARL in more real-world applications.
+Our target is to design ![image-20220408090029202](./multiagent-rl/assets/character.png)MARL algorithms which could solve or alleviate the problems mentioned above and promote the deployment and landing of MARL in more real-world applications.
+
+
 
 ### ⭐️ Core Idea
 
