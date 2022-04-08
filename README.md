@@ -170,7 +170,7 @@ Ignoring the differences in specific methods, the purpose of MBRL algorithms can
 ### 💦 Contributions
 With this repo and our research works, we want to draw the attention of RL community to studies on Model Based RL.
 
-- For people who are insterested in model based RL, our introduction in this repo and our blog can be a preliminary tutorial.
+- For people who are insterested in model based RL, our introduction in this repo and our [ZhiHu blog series](https://zhuanlan.zhihu.com/p/425318401) can be a preliminary tutorial.
 - For Researchers in model-based RL, we collect several separate lines of research, which are sometimes closed-sourced or not reproducible and make some code-level optimizations for the convinience to find comparative baselines without the need to search around for implementations.
 - We expect that our research thoughts and proposed topic for MBRL area can open up some new angles for future works on more advanced RL. **What' more, We want to cover as many interesting new directions as possible, and then divide it into the topic we listed above, to give you some inspiration and ideas for your RESEARCH.**
 
