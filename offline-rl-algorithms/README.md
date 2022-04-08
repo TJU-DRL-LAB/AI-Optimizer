@@ -36,15 +36,15 @@ This repository contains the codes of representative benchmarks and algorithms o
    - UWAC
    - BRED
    - …
- - More datasets provided:
+ - More datasets provided (TODO):
    - Real-world industrial datasets
    - Multimodal datasets
    - Augmented datasets (and corresponding methods)
    - Datasets obtained using representation learning (and corresponding methods)
- - More evaluation criteria:
+ - More evaluation criteria (TODO):
    - OPE
    - Entropy 
- - More log systems support
+ - More log systems support (TODO)
    - Wandb
 
 ![Ecology of Offline RL](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/Framework%20of%20Offline%20RL.png)
