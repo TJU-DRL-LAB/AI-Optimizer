@@ -14,22 +14,12 @@ This repository will be constantly updated to include new research works.
 
 ### :rocket: State-Of-The-Art Performance
 
-- **[API-QMIX](https://arxiv.org/pdf/2203.05285.pdf)**: the **state-of-the-art** MARL algorithm in the [StarCraft Multi-Agent Challenge (SMAC)](https://github.com/oxwhirl/smac) benchmark, which achieves **100% win-rates in almost all hard and super-hard scenarios (never achieved before)**. 
+- **[API-QMIX [1]](https://arxiv.org/pdf/2203.05285.pdf)**: the **state-of-the-art** MARL algorithm in the [StarCraft Multi-Agent Challenge (SMAC)](https://github.com/oxwhirl/smac) benchmark, which achieves **100% win-rates in almost all hard and super-hard scenarios (never achieved before)**.  paper link: https://arxiv.org/pdf/2203.05285.pdf
 
-  - **⭐️ key properties：**
+  ![API-key-features](./assets/API-key-features.png)
 
-    - **design a novel Hypernet-based permutation invariant and permutation equivariant network structure；**
-    - **great performance；**
-    - **very easy to use, few additional hyper-parameters (do not need to carefully tune the hyper-parameters)；**
-    - **the algorithm design conforms to Occam's razor principle.**
-    
-  - paper link: https://arxiv.org/pdf/2203.05285.pdf
-  
-  - [SMAC](https://github.com/oxwhirl/smac) is WhiRL's environment for research in the field of collaborative multi-agent reinforcement learning (MARL) based on Blizzard's StarCraft II RTS game. SMAC makes use of Blizzard's StarCraft II Machine Learning API and DeepMind's PySC2 to provide a convenient interface for autonomous agents to interact with StarCraft II, getting observations and performing actions. SMAC concentrates on decentralised micromanagement scenarios, where each unit of the game is controlled by an individual RL agent
-  
-    <p align="center"><img align="center" src="./assets/smac.webp" alt="SMAC" style="zoom:40%;" /></p>
-  
   - Performance of our API-QMIX and API-VDN (named HPN-QMIX and HPN-VDN in the figure) in SMAC.<img src="./assets/SMAC-performance.png" />
+
 
 
 
