@@ -41,7 +41,7 @@ We carry out our studies according to the challenges mentioned above. To solve t
 
 ### 💦 Contribution
 
-The main contribution of this repository is that we release a serials of efficient, scalable and easy to use MARL algorithms which achieve superior performance in the typical benchmarks of the MARL research community. Besides, we prove a systematic overview of challenges in MARL. With this repo and our research works, we want to draw the attention of MARL community to design more efficient, more scalable and much easier to use MARL algorithms and promote the deployment and landing of MARL in more real-world applications.
+The main contribution of this repository is that we release a serials of efficient, scalable, well-performed and easy to use MARL algorithms which achieve superior performance in the typical benchmarks of the MARL research community. Besides, we provide a systematic overview of challenges in MARL. With this repo and our research works, we want to draw the attention of MARL community to design more efficient, more scalable, well-performed and much easier to use MARL algorithms and promote the deployment and landing of MARL in more real-world applications.
 
 
 
