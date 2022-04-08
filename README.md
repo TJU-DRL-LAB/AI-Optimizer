@@ -6,7 +6,7 @@ AI-Optimizer now provides the following built-in libraries, and more libraries a
 - [Multiagent Reinforcement learning](multiagent-rl)
 - [Self-supervised Representation Reinforcement Learning](self-supervised-rl)
 - [Offline Reinforcement Learning](offline-rl-algorithms)
-- [Transfer and Multi-task Reinforcement Learning](https://github.com/TJU-DRL-LAB/transfer-and-multi-task-reinforcement-learning/tree/9dd05f2cec9dac0d78f78e96953f9fccdc5ac7a7)
+- [Transfer and Multi-task Reinforcement Learning](https://github.com/TJU-DRL-LAB/transfer-and-multi-task-reinforcement-learning)
 - [Model-based Reinforcement Learning](modelbased-rl)
 
 ## Multiagent Reinforcement Learning (MARL)
@@ -146,7 +146,7 @@ In this repo, we provide specific solutions of our lab including:
 
 * **MAPTF** addresses the **Sample-inefficiency problem** in deep MARL by proposing a Multi-Agent Policy Transfer Framework (MAPTF).
 
-* **KTM-DRL(reproduced)** : A Knowledge Transfer based Multi-task Deep Reinforcement Learning framework (KTM-DRL) for continuous control. We reproduce the results in the MuJoCo continuous control task suite, more details can be find [here].
+* **KTM-DRL(reproduced)** : A Knowledge Transfer based Multi-task Deep Reinforcement Learning framework (KTM-DRL) for continuous control. We reproduce the results in the MuJoCo continuous control task suite, more details can be find [here](https://github.com/TJU-DRL-LAB/transfer-and-multi-task-reinforcement-learning/tree/main/Single-agent%20Multi-task%20RL/KTM-DRL).
 
 See more [here](https://github.com/TJU-DRL-LAB/transfer-and-multi-task-reinforcement-learning).
 

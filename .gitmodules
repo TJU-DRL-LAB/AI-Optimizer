@@ -1,9 +1,9 @@
-[submodule "transfer-and-multi-task-rl"]
-	path = transfer-and-multi-task-rl
-	url = git@github.com:TJU-DRL-LAB/transfer-and-multi-task-reinforcement-learning.git
 [submodule "multiagent-rl/src"]
 	path = multiagent-rl/src
 	url = https://github.com/TJU-DRL-LAB/Multiagent-RL.git
 [submodule "cornerstone"]
 	path = cornerstone
 	url = https://github.com/TJU-DRL-LAB/cornerstone.git
+[submodule "transfer-and-multi-task-reinforcement-learning"]
+	path = transfer-and-multi-task-reinforcement-learning
+	url = https://github.com/TJU-DRL-LAB/transfer-and-multi-task-reinforcement-learning.git
