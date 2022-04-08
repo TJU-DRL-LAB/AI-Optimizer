@@ -74,8 +74,6 @@ To clone this repo:
 git clone git@github.com:TJU-DRL-LAB/offline-rl-algorithms.git
 ```
 
-## Example
-
 ## An Overall View of Offline RL in This Repo
 
 | Category | Method                                                       | Is Contained | Is ReadME Prepared | Publication | Link |
