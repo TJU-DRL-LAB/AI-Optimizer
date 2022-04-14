@@ -37,7 +37,7 @@ The current classifications of the mainstream algorithms in the modern Model-Bas
 
 With this repo and our research works, we want to draw the attention of RL community to studies on Model Based RL.
 
-- For people who are insterested in model based RL, our introduction in this repo and our blog can be a preliminary tutorial.
+- For people who are insterested in model based RL, our introduction in this repo and our [ZhiHu blog series](https://zhuanlan.zhihu.com/p/425318401) can be a preliminary tutorial.
 
 - For Researchers in model-based RL, we collect several separate lines of research, which are sometimes closed-sourced or not reproducible and make some code-level optimizations for the convinience to find comparative baselines without the need to search around for implementations.
 
