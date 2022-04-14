@@ -88,16 +88,16 @@ In this branch, we focus on **three key questions** as follows:
 
 ### ⭐️ Core Idea
 Taking **Self-supervised Learning** (SSL) as our major paradigm for representation learning, we carry out our studies from four perspectives: 
-**State Representation**,
-**Action Representation**,
-**Policy Representation**,
-**Environment (and Task) Representation**.
+- **State Representation**,
+- **Action Representation**,
+- **Policy Representation**,
+- **Environment (and Task) Representation**.
 
 These four pespectives are major elements involved in general _Agent-Environment Interface_ of RL.
 They play the roles of _input_, _optimization target_ and etc. in the process of RL.
-The representation of these elements make a great impact on the sample efficiency, convergence optimality and cross-enviornment generalization.
+The representation of these elements make a great impact on the **sample efficiency**, **convergence optimality** and **cross-enviornment generalization**.
 
-### 💦 Contribution
+
 The central contribution of this repo is **A Unified Algorithmic Framework (Implementation Design) of SSRL Algorithm**.
 The framework provides a unified interpretation for almost all currently existing SSRL algorithms. Moreover, the framework can also serve as a paradigm when we are going to devise new methods.
 
@@ -113,13 +113,13 @@ Finally, this promotes the deployment and landing of RL in real-world applicatio
 
 See more [here](self-supervised-rl).
 
-### 🌏 Intention & Impact
+### 💦 Contribution
 
 With this repo and our research works, we want to draw the attention of RL community to studies on Self-supervised Representation Learning for RL.
 
 - For people who are insterested in RL, our introduction in this repo and our [blogs](https://zhuanlan.zhihu.com/p/413321572) can be a preliminary tutorial.
-- For cutting-edge RL researchers, we expect that our research thoughts and proposed SSRL framework can open up some new angles for future works on more advanced RL.
-- For RL participators (especially who work on related fields), we hope that our opensource works and codes may be helpful and inspiring.
+- For cutting-edge RL researchers, we believe that our research thoughts and the proposed SSRL framework are insightful and inspiring, openning up new angles for future works on more advanced RL.
+- For RL practicers (especially who work on related fields), we provide advanced RL algorithms with strong performance in online RL (e.g., [PPO-PeVFA](./self-supervised-rl/RL_with_Policy_Representation/Policy-based_RL_with_PeVFA/PPO-PeVFA)), hybrid-action decision-making (e.g., [HyAR](./self-supervised-rl/RL_with_Action_Representation/HyAR)), policy adaptation from offline experience (e.g., [PAnDR](./self-supervised-rl/RL_with_Environment_Representation/PAnDR)) ..., which can be adopted or developed in associated academic and industrial problems.
 
 We are also looking forward to feedback in any form to promote more in-depth researches.
 
