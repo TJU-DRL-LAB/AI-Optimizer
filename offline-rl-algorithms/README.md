@@ -34,11 +34,7 @@ This repository contains the codes of representative benchmarks and algorithms o
 
  - For people who are insterested in Offline RL, our introduction of each algorithm and our [tutorial blogs](https://zhuanlan.zhihu.com/p/414497708) can be helpful.
  - For RL practicers (especially who work on related fields), we provide advanced Offline RL algorithms with strong performance and different kinds of datasets. In detail, we provide:
-   - **A unified algorithm framework with rich and fair comparisons bewteen different algorithms**:
-     - REDQ
-     - UWAC
-     - BRED
-     - …
+   - **A unified algorithm framework with rich and fair comparisons bewteen different algorithms**
    - **Abundant and real-world datasets**:
      - Real-world industrial datasets
      - Multimodal datasets
