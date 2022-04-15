@@ -12,13 +12,19 @@ This repository will be constantly updated to include new research works.
 
 ## 1. Key Features
 
-### :rocket: State-Of-The-Art Performance
+The main contribution of this repository is that:
 
-- **[API-QMIX [1]](https://arxiv.org/pdf/2203.05285.pdf)**: the **state-of-the-art** MARL algorithm in the [StarCraft Multi-Agent Challenge (SMAC)](https://github.com/oxwhirl/smac) benchmark, which achieves **100% win-rates in almost all hard and super-hard scenarios (never achieved before)**.  paper link: https://arxiv.org/pdf/2203.05285.pdf
+- **For beginners** who are interested in MARL,  our [easy-marl](test) codebase and ZhiHu blogs: [MARL](https://www.zhihu.com/column/c_1479535265715298304) and [communication-based MARL](https://www.zhihu.com/column/c_1431679500950560768) can be a preliminary tutorial.
 
-  ![API-key-features](./assets/API-key-features.png)
+- **For researchers,** we provide a systematic overview of typical challenges in MARL from different perspectives, each of which is a very valuable research direction and contains a series recent research works. We hope with our research works and the corresponding released codes can make it easier for researchers to design new algorithms. 
 
-  - Performance of our API-QMIX and API-VDN (named HPN-QMIX and HPN-VDN in the figure) in SMAC.<img src="./assets/SMAC-performance.png" />
+  - For example, given the significant interest in designing novel MARL architectures over the past few years, the research direction of [scalable multiagent networks](https://github.com/TJU-DRL-LAB/Multiagent-RL/tree/304dc434f5be947641ab8eed9857a034f3ec1507/scalability) is definitely of interest to the MARL community. More recently, the notion of *permutation-invariance* and *permutation-equivariance* in the design of MARL agents has relatively drawn less attention than deserved, and therefore the presented idea in [API paper](https://arxiv.org/pdf/2203.05285.pdf) is interesting and very relevant to MARL researchers.
+
+- **For practitioners**,  we release a serials of **efficient, scalable, well-performed** and **easy to use** MARL algorithms which achieve superior performance in the typical benchmarks of the MARL research community. 
+
+  - For example, the API-QMIX, API-VDN, API-MAPPO and API-MADDPG algorithms proposed in our paper ["API: Boosting Multi-Agent Reinforcement Learning via Agent-Permutation-Invariant Networks"](https://arxiv.org/pdf/2203.05285.pdf) achieve State-Of-The-Art Performance in the [StarCraft Multi-Agent Challenge (SMAC)](https://github.com/oxwhirl/smac) and [Multi-agent Particle Environment](https://github.com/openai/multiagent-particle-envs) benchmarks, which achieves **100% win-rates in almost all hard and super-hard SMAC scenarios (never achieved before)**.
+    - :rocket: State-Of-The-Art Performance of our API-QMIX and API-VDN (named HPN-QMIX and HPN-VDN in the figure) in SMAC.<img src="./assets/SMAC-performance.png" />
+  - **We strongly recommend** that practitioners **try and use our API-Network solution FIRST** when solving practical MARL problems (because it is very easy to use and does work very well) !  We hope our works can promote the deployment and landing of MARL in more real-world applications.
 
 
 
