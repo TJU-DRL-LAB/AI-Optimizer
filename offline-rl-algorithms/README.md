@@ -75,7 +75,7 @@ git clone git@github.com:TJU-DRL-LAB/offline-rl-algorithms.git
 ## An Overall View of Offline RL in This Repo
 
 
-| Category | Method                                                       | Is Contained | Is ReadME Prepared | Publication | Paper Link |
+| Category | Method and Code Link                                                      | Is Contained | Is ReadME Prepared | Publication | Paper Link |
 |----------|--------------------------------------------------------------|--------------|--------------------|-------------|------|
 | IL       | BC                                                           | ✅            | ✅                  |             |      |
 | PC       | [Batch Constrained Q-learning (BCQ)](./BCQ) | ✅            | ✅                  | ICML 2019 |  [Off-Policy Deep Reinforcement Learning without Exploration](https://arxiv.org/pdf/1812.02900.pdf)    |
