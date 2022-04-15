@@ -117,7 +117,7 @@ class IPPO(object):
             old_action_prob = action_prob_batch
             advantage = state_value_target - state_value
             ratio = torch.exp(torch.log(action_prob) - torch.log(old_action_prob))
-            ppo_loss = -torch.mean(torch.clamp(ratio, 1-self.args.eps_clip, 1+self.args.eps_clip) * advantage)
+            ppo_loss = -torch.mean(torch.min(ratio * advantage, torch.clamp(ratio, 1-self.args.eps_clip, 1+self.args.eps_clip) * advantage))
             total_loss += ppo_loss
 
             # for exploration
