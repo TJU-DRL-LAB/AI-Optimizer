@@ -21,7 +21,7 @@ Besides, we add an additional class of Offline to Online research algorithms:
 
 - Offline to Online (Off2On)
 
-For a tutorial of this taxnomy, we refer the reader to our [ZhiHu blog series](https://zhuanlan.zhihu.com/p/414497708).
+
 
 ### Ecology of Offline RL
 Current deep RL methods still typically rely on active data collection to succeed, hindering their application in the real world especially when the data collection is dangerous or expensive. Offline RL (also known as batch RL) is a data-driven RL paradigm concerned with learning exclusively from static datasets of previously-collected experiences. In this setting, a behavior policy interacts with the environment to collect a set of experiences, which can later be used to learn a policy without further interaction. This paradigm can be extremely valuable in settings where online interaction is impractical. However, current offline rl methods are restricted to three challenges:
@@ -32,8 +32,8 @@ Current deep RL methods still typically rely on active data collection to succee
 ### Contribution and Features
 This repository contains the codes of representative benchmarks and algorithms on the topic of Offline Reinforcement Learning. The repository is developed based on [d3rlpy](https://github.com/takuseno/d3rlpy) following MIT license to shed lights on the research on the above three challenges. While inheriting its advantages, the additional features include (or will be included).
 
- - For people who are insterested in Offline RL, our introduction of each algorithm and our tutorial blogs can be helpful.
- - For RL practicers (especially who work on related fields), we provide advanced Offline RL algorithms with strong performance and different kinds of datasets. In detail:
+ - For people who are insterested in Offline RL, our introduction of each algorithm and our [tutorial blogs](https://zhuanlan.zhihu.com/p/414497708) can be helpful.
+ - For RL practicers (especially who work on related fields), we provide advanced Offline RL algorithms with strong performance and different kinds of datasets. In detail, we provide:
    - **A unified algorithm framework with rich and fair comparisons bewteen different algorithms**:
      - REDQ
      - UWAC
