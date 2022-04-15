@@ -182,11 +182,11 @@ Ignoring the differences in specific methods, the purpose of MBRL algorithms can
 
 ![](./images/MBRL_framework.png)
 ### 💦 Contributions
-##### Why MBRL ?
+#### Why MBRL ?
 
-Model-based reinforcement learning (MBRL) enjoys several benefits, such as data-efficiency and planning, by learning a model of the environments dynamics. The model of the environment is a representation model that explicitly contains knowledge about the environment or the task, and generally two types of models are included: a transition model or a dynamics model and the reward model. Once this model is modeled, it can be properly integrated into the interaction with the environment and the learning of strategies. 
+Model-based reinforcement learning (MBRL) enjoys several benefits, such as data-efficiency and planning, by learning a model of the environments dynamics. The model of the environment is a representation model that explicitly contains knowledge about the environment or the task, and generally two types of models are included: a transition model or a dynamics model and the reward model. Once this model is modeled, it can be properly integrated into the interaction with the environment and the learning of strategies. 
 
-##### Why Our Lib?
+#### Why Our Lib?
 
 With this repo and our research works, we want to draw the attention of RL community to studies on Model Based RL.
 
