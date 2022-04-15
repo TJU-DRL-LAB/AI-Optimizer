@@ -80,17 +80,17 @@ git clone git@github.com:TJU-DRL-LAB/offline-rl-algorithms.git
 |----------|--------------------------------------------------------------|--------------|--------------------|-------------|------|
 | IL       | BC                                                           | ✅            | ✅                  |             |      |
 | PC       | [Batch Constrained Q-learning (BCQ)](./BCQ) | ✅            | ✅                  | ICML 2019   | <https://arxiv.org/pdf/1812.02900.pdf>    |
-| PC       | Bootstrapping Error Accumulation Reduction (BEAR)            | ✅            | ✅                  | NIPS 2019  |  <https://proceedings.neurips.cc/paper/2019/file/c2073ffa77b5357a498057413bb09d3a-Paper.pdf>    |
+| PC       | [Bootstrapping Error Accumulation Reduction (BEAR)](./BEAR)            | ✅            | ✅                  | NIPS 2019  |  <https://proceedings.neurips.cc/paper/2019/file/c2073ffa77b5357a498057413bb09d3a-Paper.pdf>    |
 | PC       | Advantage-Weighted Regression (AWR)                          | ✅            | ✅                  |   |   <https://arxiv.org/pdf/1910.00177.pdf>   |
-| VR       | Conservative Q-Learning (CQL)                                | ✅            | ❌                  | NIPS 2020   |  <https://proceedings.neurips.cc/paper/2020/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf>    |
+| VR       | [Conservative Q-Learning (CQL)](./CQL)                                | ✅            | ❌                  | NIPS 2020   |  <https://proceedings.neurips.cc/paper/2020/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf>    |
 | VR       | Critic Reguralized Regression (CRR)                          | ✅            | ❌                  | NIPS 2020   |  <https://proceedings.neurips.cc//paper/2020/file/588cb956d6bbe67078f29f8de420a13d-Paper.pdf>    |
 | VR       | Implicit Q-Learning (IQL)                                    | ✅            | ❌                  | In progress   |  <https://arxiv.org/pdf/2110.06169.pdf>    |
-| U        | Uncertainty Weighted Actor Critic (UWAC)                     | ❌            | ❌                  |  ICML 2021           |  <http://proceedings.mlr.press/v139/wu21i/wu21i.pdf>    |
+| U        | [Uncertainty Weighted Actor Critic (UWAC)](./UWAC)                     | ❌            | ❌                  |  ICML 2021           |  <http://proceedings.mlr.press/v139/wu21i/wu21i.pdf>    |
 | U        | SAC-N                                                        | ✅            | ❌                  |             |  <https://openreview.net/pdf?id=ZUvaSolQZh3>    |
 | U        | Ensemble Diversed Actor Critic (EDAC)                        | ❌           | ❌                  |   NIPS 2021          |  <https://openreview.net/pdf?id=ZUvaSolQZh3>    |
 | MB       | Model-based Offline Policy Optimization (MOPO)               | ✅            | ❌                  |    NIPS 2020         |  <https://proceedings.neurips.cc/paper/2020/file/a322852ce0df73e204b7e67cbbef0d0a-Paper.pdf>    |
 | MB       | Conservative Offline Model-Based Policy Optimization (COMBO) | ✅            | ❌                  |   NIPS 2021          |  <https://proceedings.neurips.cc/paper/2021/file/f29a179746902e331572c483c45e5086-Paper.pdf>    |
-| Off2On   | Advantage Weighted Actor-Critic (AWAC)                       | ✅            | ✅                  | In progress |  <https://arxiv.org/pdf/2006.09359.pdf>    |
+| Off2On   | [Advantage Weighted Actor-Critic (AWAC)](./AWAC)                       | ✅            | ✅                  | In progress |  <https://arxiv.org/pdf/2006.09359.pdf>    |
 | Off2On   | Balanced Replay (BRED)                                       | ❌          | ❌                  | CoRL 2021   |   <https://arxiv.org/pdf/2107.00591.pdf>   |
 
 ## Datastes Provided in Repo
