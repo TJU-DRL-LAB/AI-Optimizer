@@ -79,7 +79,7 @@ git clone git@github.com:TJU-DRL-LAB/offline-rl-algorithms.git
 | Category | Method                                                       | Is Contained | Is ReadME Prepared | Publication | Paper Link |
 |----------|--------------------------------------------------------------|--------------|--------------------|-------------|------|
 | IL       | BC                                                           | ✅            | ✅                  |             |      |
-| PC       | Batch Constrained Q-learning (BCQ)(./BCQ) | ✅            | ✅                  | ICML 2019   | <https://arxiv.org/pdf/1812.02900.pdf>    |
+| PC       | [Batch Constrained Q-learning (BCQ)](./BCQ) | ✅            | ✅                  | ICML 2019   | <https://arxiv.org/pdf/1812.02900.pdf>    |
 | PC       | Bootstrapping Error Accumulation Reduction (BEAR)            | ✅            | ✅                  | NIPS 2019  |  <https://proceedings.neurips.cc/paper/2019/file/c2073ffa77b5357a498057413bb09d3a-Paper.pdf>    |
 | PC       | Advantage-Weighted Regression (AWR)                          | ✅            | ✅                  |   |   <https://arxiv.org/pdf/1910.00177.pdf>   |
 | VR       | Conservative Q-Learning (CQL)                                | ✅            | ❌                  | NIPS 2020   |  <https://proceedings.neurips.cc/paper/2020/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf>    |
