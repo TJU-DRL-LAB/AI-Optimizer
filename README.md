@@ -43,7 +43,7 @@ We carry out our studies according to the challenges mentioned above. To solve t
 
 The main contribution of this repository is that:
 
-- **For beginners** who are interested in MARL,  our [easy-marl](test) codebase and ZhiHu blogs: [MARL](https://www.zhihu.com/column/c_1479535265715298304) and [communication-based MARL](https://www.zhihu.com/column/c_1431679500950560768) can be a preliminary tutorial.
+- **For beginners** who are interested in MARL,  our [easy-marl](https://github.com/TJU-DRL-LAB/AI-Optimizer/tree/main/multiagent-rl/easy-marl) codebase and ZhiHu blogs: [MARL](https://www.zhihu.com/column/c_1479535265715298304) and [communication-based MARL](https://www.zhihu.com/column/c_1431679500950560768) can be a preliminary tutorial.
 
 - **For researchers,** we provide a systematic overview of typical challenges in MARL from different perspectives, each of which is a very valuable research direction and contains a series recent research works. We hope with our research works and the corresponding released codes can make it easier for researchers to design new algorithms. 
 
