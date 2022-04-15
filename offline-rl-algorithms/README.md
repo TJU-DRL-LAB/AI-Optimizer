@@ -31,21 +31,19 @@ Current deep RL methods still typically rely on active data collection to succee
 
 ### Contribution and Features
 This repository contains the codes of representative benchmarks and algorithms on the topic of Offline Reinforcement Learning. The repository is developed based on d3rlpy(https://github.com/takuseno/d3rlpy) following MIT license to shed lights on the research on the above three challenges. While inheriting its advantages, the additional features include (or will be included):
- - A unified algorithm framework with more algorithms
+ - A unified algorithm framework with rich and fair comparisons bewteen different algorithms:
    - REDQ
    - UWAC
    - BRED
    - …
- - More datasets provided (TODO):
+ - Abundant and real-world datasets:
    - Real-world industrial datasets
    - Multimodal datasets
    - Augmented datasets (and corresponding methods)
    - Datasets obtained using representation learning (and corresponding methods)
- - More evaluation criteria (TODO):
-   - OPE
-   - Entropy 
- - More log systems support (TODO)
+ - More easy-to-use log systems support: 
    - Wandb
+
 
 ![Ecology of Offline RL](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/Framework%20of%20Offline%20RL.png)
 
@@ -76,22 +74,22 @@ git clone git@github.com:TJU-DRL-LAB/offline-rl-algorithms.git
 
 ## An Overall View of Offline RL in This Repo
 
-| Category | Method                                                       | Is Contained | Is ReadME Prepared | Publication | Link |
+| Category | Method                                                       | Is Contained | Is ReadME Prepared | Publication | Paper Link |
 |----------|--------------------------------------------------------------|--------------|--------------------|-------------|------|
 | IL       | BC                                                           | ✅            | ✅                  |             |      |
-| PC       | Batch Constrained Q-learning (BCQ)                           | ✅            | ✅                  | ICML 2019   | <https://arxiv.org/pdf/1812.02900.pdf>    |
-| PC       | Bootstrapping Error Accumulation Reduction (BEAR)            | ✅            | ✅                  | NIPS 2019  |  <https://proceedings.neurips.cc/paper/2019/file/c2073ffa77b5357a498057413bb09d3a-Paper.pdf>    |
+| PC       | [Batch Constrained Q-learning (BCQ)](./BCQ) | ✅            | ✅                  | ICML 2019 |  https://arxiv.org/pdf/1812.02900.pdf>    |
+| PC       | [Bootstrapping Error Accumulation Reduction (BEAR)](./BEAR)            | ✅            | ✅                  | NIPS 2019  |  <https://proceedings.neurips.cc/paper/2019/file/c2073ffa77b5357a498057413bb09d3a-Paper.pdf>    |
 | PC       | Advantage-Weighted Regression (AWR)                          | ✅            | ✅                  |   |   <https://arxiv.org/pdf/1910.00177.pdf>   |
-| VR       | Conservative Q-Learning (CQL)                                | ✅            | ❌                  | NIPS 2020   |  <https://proceedings.neurips.cc/paper/2020/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf>    |
+| VR       | [Conservative Q-Learning (CQL)](./CQL)                                | ✅            | ✅                  | NIPS 2020   |  <https://proceedings.neurips.cc/paper/2020/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf>    |
 | VR       | Critic Reguralized Regression (CRR)                          | ✅            | ❌                  | NIPS 2020   |  <https://proceedings.neurips.cc//paper/2020/file/588cb956d6bbe67078f29f8de420a13d-Paper.pdf>    |
 | VR       | Implicit Q-Learning (IQL)                                    | ✅            | ❌                  | In progress   |  <https://arxiv.org/pdf/2110.06169.pdf>    |
-| U        | Uncertainty Weighted Actor Critic (UWAC)                     | ❌            | ❌                  |  ICML 2021           |  <http://proceedings.mlr.press/v139/wu21i/wu21i.pdf>    |
-| U        | SAC-N                                                        | ✅            | ❌                  |             |  <https://openreview.net/pdf?id=ZUvaSolQZh3>    |
-| U        | Ensemble Diversed Actor Critic (EDAC)                        | ❌           | ❌                  |   NIPS 2021          |  <https://openreview.net/pdf?id=ZUvaSolQZh3>    |
-| MB       | Model-based Offline Policy Optimization (MOPO)               | ✅            | ❌                  |    NIPS 2020         |  <https://proceedings.neurips.cc/paper/2020/file/a322852ce0df73e204b7e67cbbef0d0a-Paper.pdf>    |
-| MB       | Conservative Offline Model-Based Policy Optimization (COMBO) | ✅            | ❌                  |   NIPS 2021          |  <https://proceedings.neurips.cc/paper/2021/file/f29a179746902e331572c483c45e5086-Paper.pdf>    |
-| Off2On   | Advantage Weighted Actor-Critic (AWAC)                       | ✅            | ✅                  | In progress |  <https://arxiv.org/pdf/2006.09359.pdf>    |
-| Off2On   | Balanced Replay (BRED)                                       | ❌          | ❌                  | CoRL 2021   |   <https://arxiv.org/pdf/2107.00591.pdf>   |
+| U        | [Uncertainty Weighted Actor Critic (UWAC)](./UWAC)                     | ✅            | ✅                 |  ICML 2021           |  [Uncertainty Weighted Actor-Critic for Offline Reinforcement Learning](<http://proceedings.mlr.press/v139/wu21i/wu21i.pdf>)    |
+| U        | SAC-N                                                        | ✅            | ❌                  |             |  [Uncertainty-Based Offline Reinforcement Learning with Diversified Q-Ensemble](<https://openreview.net/pdf?id=ZUvaSolQZh3>)    |
+| U        | Ensemble Diversed Actor Critic (EDAC)                        | ❌           | ❌                  |   NIPS 2021          |  [Uncertainty-Based Offline Reinforcement Learning with Diversified Q-Ensemble](<https://openreview.net/pdf?id=ZUvaSolQZh3>)    |
+| MB       | Model-based Offline Policy Optimization (MOPO)               | ✅            | ❌                  |    NIPS 2020         |  [MOPO: Model-based Offline Policy Optimization](<https://proceedings.neurips.cc/paper/2020/file/a322852ce0df73e204b7e67cbbef0d0a-Paper.pdf>)    |
+| MB       | Conservative Offline Model-Based Policy Optimization (COMBO) | ✅            | ❌                  |   NIPS 2021          |  [COMBO: Conservative Offline Model-Based Policy Optimization](<https://proceedings.neurips.cc/paper/2021/file/f29a179746902e331572c483c45e5086-Paper.pdf>)    |
+| Off2On   | [Advantage Weighted Actor-Critic (AWAC)](./AWAC)                       | ✅            | ✅                  | In progress |  [AWAC: Accelerating Online Reinforcement Learning with Offline Datasets](<https://arxiv.org/pdf/2006.09359.pdf>)    |
+| Off2On   | Balanced Replay (BRED)                                       | ❌          | ❌                  | CoRL 2021   |   [Offline-to-Online Reinforcement Learning via Balanced Replay and Pessimistic Q-Ensemble](<https://arxiv.org/pdf/2107.00591.pdf>)   |
 
 ## Datastes Provided in Repo
 
