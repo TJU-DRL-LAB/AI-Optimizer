@@ -33,7 +33,7 @@ The current classifications of the mainstream algorithms in the modern Model-Bas
 
 ![](./README.assets/MBRL_framework.png)
 
-### Key Features
+### 💦Key Features
 
 #### Why MBRL ?
 
