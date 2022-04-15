@@ -31,21 +31,19 @@ Current deep RL methods still typically rely on active data collection to succee
 
 ### Contribution and Features
 This repository contains the codes of representative benchmarks and algorithms on the topic of Offline Reinforcement Learning. The repository is developed based on d3rlpy(https://github.com/takuseno/d3rlpy) following MIT license to shed lights on the research on the above three challenges. While inheriting its advantages, the additional features include (or will be included):
- - A unified algorithm framework with more algorithms
+ - A unified algorithm framework with rich and fair comparisons bewteen different algorithms:
    - REDQ
    - UWAC
    - BRED
    - …
- - More datasets provided (TODO):
+ - Abundant and real-world datasets:
    - Real-world industrial datasets
    - Multimodal datasets
    - Augmented datasets (and corresponding methods)
    - Datasets obtained using representation learning (and corresponding methods)
- - More evaluation criteria (TODO):
-   - OPE
-   - Entropy 
- - More log systems support (TODO)
+ - More easy-to-use log systems support: 
    - Wandb
+
 
 ![Ecology of Offline RL](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/Framework%20of%20Offline%20RL.png)
 
