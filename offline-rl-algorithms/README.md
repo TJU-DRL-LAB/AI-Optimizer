@@ -182,7 +182,7 @@ get_dataset(args.dataset)
 ```
 ### Modify Algorithm
 Assuming you're modifying algorithm based on SAC: 
-* Create two python file, name them as *YourSAC.py* and *YourSACImpl.py*.
+* Create two python file, name them as *YourSAC.py* and *YourSACImpl.py*. 其中*YourSACImpl.py*中指定的*YourSACImpl* class继承*SACImpl*.
 * Modify your algo in *YourSACImpl.py* by overloading *compute_critic_loss/compute_actor_loss/other* functions.
 ```
 def compute_critic_loss(self, batch: TorchMiniBatch, q_tpn: torch.Tensor) -> torch.Tensor:
