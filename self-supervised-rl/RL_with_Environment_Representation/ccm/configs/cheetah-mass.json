@@ -1,0 +1,36 @@
+{
+    "env_name": "cheetah-mass",
+    "n_train_tasks": 60,
+    "n_eval_tasks": 10,
+    "env_params": {
+        "n_tasks": 60,
+        "sparse": true
+    },
+    "env_params2": {
+        "env_type": "test",
+        "n_tasks": 10,
+        "sparse": true
+    }
+    ,
+    "algo_params": {
+        "num_iterations": 600,
+        "meta_batch": 20,
+        "num_initial_steps": 512,
+        "num_steps_prior": 256,
+        "num_steps_posterior": 512,
+        "num_extra_rl_steps_posterior": 0,
+        "num_train_steps_per_itr": 1000,
+        "num_evals": 1,
+        "num_steps_per_eval": 320,
+        "num_exp_traj_eval": 4,
+        "max_path_length": 64,
+        "embedding_batch_size": 128,
+        "embedding_mini_batch_size": 128,
+        "batch_size": 128,
+        "kl_lambda": 1e-4,
+        "use_information_bottleneck": true,
+        "meta_episode_len": 2,
+        "use_next_state": true
+    }
+}
+

@@ -1,0 +1,37 @@
+{
+    "env_name": "sparse-point-robot1",
+    "n_train_tasks": 40,
+    "n_eval_tasks": 5,
+    "env_params": {
+        "n_tasks": 40
+    }
+    ,
+    "env_params2": {
+        "env_type": "test",
+        "n_tasks": 5,
+        "sparse": true
+    }
+    ,
+    "algo_params": {
+        "meta_batch": 24,
+        "num_initial_steps": 2000,
+        "num_tasks_sample": 8,
+        "num_steps_prior": 300,
+        "num_steps_posterior": 1200,
+        "num_extra_rl_steps_posterior": 0,
+        "num_train_steps_per_itr": 1000,
+        "num_steps_per_eval": 320,
+        "embedding_batch_size": 240,
+        "embedding_mini_batch_size": 240,
+        "num_evals": 3,
+        "batch_size": 240,
+        "max_path_length": 40,
+        "discount": 0.90,
+        "reward_scale": 100.0,
+        "sparse_rewards": 1,
+        "kl_lambda": 1.0,
+        "meta_episode_len": 5,
+        "use_information_bottleneck": true,
+        "use_next_state": false
+    }
+}

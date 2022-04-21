@@ -1,0 +1,27 @@
+{
+
+    "env_name": "ML45_test",
+    "n_train_tasks": 450,
+    "n_eval_tasks": 25,
+    "env_params": {
+        "n_tasks": 450
+    },
+    "env_params2": {
+        "env_type": "test",
+        "n_tasks": 25
+    },
+    "algo_params": {
+        "meta_batch": 16,
+        "num_initial_steps": 2000,
+        "num_steps_prior": 400,
+        "num_steps_posterior": 0,
+        "num_extra_rl_steps_posterior": 600,
+        "num_train_steps_per_itr": 4000,
+        "num_evals": 1,
+        "num_steps_per_eval": 600,
+        "num_exp_traj_eval": 2,
+        "embedding_batch_size": 150,
+        "embedding_mini_batch_size": 150,
+        "kl_lambda": 1
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "exp_name": "newmetaexplore",
+    "env_name": "reacher-goal-sparse",
+    "n_train_tasks": 45,
+    "n_eval_tasks": 5,
+    "env_params": {
+        "n_tasks": 45,
+        "sparse": true
+    },
+    "env_params2": {
+        "env_type": "test",
+        "n_tasks": 5,
+        "sparse": true
+    }
+    ,
+    "algo_params": {
+        "num_iterations": 2000,
+        "num_initial_steps": 256,
+        "num_steps_prior": 256,
+        "num_steps_posterior": 256,
+        "num_extra_rl_steps_posterior": 256,
+        "num_train_steps_per_itr": 1000,
+        "num_evals": 3,
+        "num_steps_per_eval": 256,
+        "embedding_batch_size": 192,
+        "embedding_mini_batch_size": 192,
+        "batch_size": 192,
+        "max_path_length": 64,
+        "reward_scale": 100.0,
+        "kl_lambda": 1e-0,
+        "discount": 0.90,
+        "use_information_bottleneck": true,
+        "meta_episode_len": 3,
+        "use_next_state": false
+    }
+}

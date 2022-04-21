@@ -1,0 +1,36 @@
+{
+    "env_name": "cheetah-vel",
+    "n_train_tasks": 100,
+    "n_eval_tasks": 10,
+    "env_params": {
+        "n_tasks": 100,
+        "sparse": true
+    },
+    "env_params2": {
+        "env_type": "test",
+        "n_tasks": 10,
+        "sparse": true
+    }
+    ,
+    "algo_params": {
+        "num_iterations": 2000,
+        "meta_batch": 16,
+        "num_initial_steps": 512,
+        "num_steps_prior": 256,
+        "num_steps_posterior": 128,
+        "num_extra_rl_steps_posterior": 256,
+        "num_train_steps_per_itr": 1000,
+        "num_evals": 1,
+        "num_steps_per_eval": 128,
+        "num_exp_traj_eval": 2,
+        "max_path_length": 64,
+        "embedding_batch_size": 64,
+        "embedding_mini_batch_size": 64,
+        "batch_size": 64,
+        "kl_lambda": 1e-4,
+        "use_information_bottleneck": true,
+        "meta_episode_len": 1,
+        "use_next_state": false
+    }
+}
+

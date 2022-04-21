@@ -1,0 +1,21 @@
+{
+    "env_name": "fetch_slide",
+    "n_train_tasks": 100,
+    "n_eval_tasks": 30,
+    "env_params": {
+        "n_tasks": 130
+    }
+    ,
+    "algo_params": {
+        "num_initial_steps": 2000,
+        "num_steps_prior": 400,
+        "num_steps_posterior": 0,
+        "num_extra_rl_steps_posterior": 600,
+        "num_train_steps_per_itr": 4000,
+        "num_evals": 1,
+        "num_steps_per_eval": 600,
+        "num_exp_traj_eval": 2,
+        "embedding_batch_size": 256,
+        "embedding_mini_batch_size": 256
+    }
+}

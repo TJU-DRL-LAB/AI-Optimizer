@@ -1,0 +1,28 @@
+{
+    "env_name": "cheetah-damping",
+    "n_train_tasks": 30,
+    "n_eval_tasks": 5,
+    "env_params": {
+        "n_tasks": 30
+    },
+    "env_params2": {
+        "env_type": "test",
+        "n_tasks": 5
+    }
+    ,
+    "algo_params": {
+        "meta_batch": 12,
+        "num_initial_steps": 1000,
+        "num_steps_prior": 200,
+        "num_steps_posterior": 0,
+        "num_extra_rl_steps_posterior": 300,
+        "num_train_steps_per_itr": 2000,
+        "num_evals": 1,
+        "num_steps_per_eval": 600,
+        "num_exp_traj_eval": 2,
+        "embedding_batch_size": 100,
+        "embedding_mini_batch_size": 100,
+        "use_information_bottleneck": false
+    }
+}
+

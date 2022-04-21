@@ -1,0 +1,21 @@
+{
+    "env_name": "fetch_pickandplace",
+    "n_train_tasks": 2,
+    "n_eval_tasks": 2,
+    "env_params": {
+        "n_tasks": 2
+    }
+    ,
+    "algo_params": {
+        "meta_batch": 4,
+        "num_initial_steps": 2000,
+        "num_steps_prior": 1000,
+        "num_steps_posterior": 0,
+        "num_extra_rl_steps_posterior": 1000,
+        "num_evals": 4,
+        "num_steps_per_eval": 600,
+        "num_exp_traj_eval": 2,
+        "embedding_batch_size": 256,
+        "embedding_mini_batch_size": 256
+    }
+}

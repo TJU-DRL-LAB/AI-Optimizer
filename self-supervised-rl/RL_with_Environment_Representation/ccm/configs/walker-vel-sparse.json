@@ -1,0 +1,39 @@
+{
+    "env_name": "nwalker-vel-sparse",
+    "n_train_tasks": 100,
+    "n_eval_tasks": 10,
+    "latent_size": 2,
+    "env_params": {
+        "n_tasks": 100
+    }
+    ,
+    "env_params2": {
+        "env_type": "test",
+        "n_tasks": 10,
+        "sparse": true
+    },
+    "algo_params": {
+        "meta_batch": 16,
+        "num_iterations": 2000,
+        "num_initial_steps": 128,
+        "num_steps_prior": 256,
+        "num_steps_posterior": 256,
+        "num_extra_rl_steps_posterior": 256,
+        "num_evals": 1,
+        "num_train_steps_per_itr": 1000,
+        "num_steps_per_eval": 256,
+        "embedding_batch_size": 64,
+        "embedding_mini_batch_size": 64,
+        "batch_size": 64,
+        "max_path_length": 64,
+        "kl_lambda": 1e-0,
+        "meta_episode_len": 2,
+        "reward_scale": 10,
+        "use_information_bottleneck": true,
+        "use_next_state": false
+    },
+    "util_params": {
+        "base_log_dir":"outputmetacure"
+
+    }
+}
