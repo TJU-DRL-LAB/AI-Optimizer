@@ -172,6 +172,24 @@ def get_your_data_function():
 
 ```
 ### Modify Algorithm
+Assuming you're modifying algorithm based on SAC: 
+* Create two python file, name them as *YourSAC.py* and *YourSACImpl.py*.
+* Modify your algo in *YourSACImpl.py* by overloading *compute_critic_loss/compute_actor_loss/other* functions.
+```
+def compute_critic_loss(self, batch: TorchMiniBatch, q_tpn: torch.Tensor) -> torch.Tensor:
+    return your_critic_loss
+
+def compute_actor_loss(self, batch: TorchMiniBatch) -> torch.Tensor:
+    return your_actor_loss
+```
+* Import *YourSACImpl* in *YourSAC.py* and modify *_create_impl* function to pass your algorithm parameters to *YourSACImpl.py*
+```
+def _create_impl(self, observation_shape: Sequence[int], action_size: int) -> None:
+    self._impl = YourSACImpl(a=A, b=B, ...)
+    self._impl.build()
+```
+
+
 
 
 ## TODO
