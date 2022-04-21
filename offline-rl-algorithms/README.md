@@ -34,14 +34,14 @@ This repository contains the codes of representative benchmarks and algorithms o
 
  - For people who are insterested in Offline RL, our introduction of each algorithm and our [tutorial blogs](https://zhuanlan.zhihu.com/p/414497708) can be helpful.
  - For RL practicers (especially who work on related fields), we provide advanced Offline RL algorithms with strong performance and different kinds of datasets. In detail, we provide:
-   - **A unified algorithm framework with rich and fair comparisons bewteen different algorithms**
+   - **A unified algorithm framework with rich and fair comparisons bewteen different algorithms**  (In Progress)
    - **Abundant and real-world datasets**:
-     - Real-world industrial datasets
-     - Multimodal datasets
-     - Augmented datasets (and corresponding methods)
-     - Datasets obtained using representation learning (and corresponding methods)
+     - Multimodal datasets (DDL: 2022/05/30)
+     - Real-world industrial datasets (DDL: TBD)
+     - Augmented datasets (and corresponding methods) (DDL: 2022/09/30)
+     - Datasets obtained using representation learning (and corresponding methods) (DDL: 2022/09/30)
    - **More easy-to-use log systems support**: 
-     - Wandb
+     - Wandb (DDL: 2022/04/30)
 ![Ecology of Offline RL](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/Framework%20of%20Offline%20RL.png)
 
 
