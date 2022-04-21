@@ -177,9 +177,18 @@ Assuming you're modifying algorithm based on SAC:
 * Modify your algo in *YourSACImpl.py* by overloading *compute_critic_loss/compute_actor_loss/other* functions.
 ```
 def compute_critic_loss(self, batch: TorchMiniBatch, q_tpn: torch.Tensor) -> torch.Tensor:
+    observations = batch.observations
+    actions = batch.actions
+    rewards = batch.next_rewards
+    ...
+    your_critic_loss = critic_loss_func(observations, actions, rewards)
     return your_critic_loss
 
 def compute_actor_loss(self, batch: TorchMiniBatch) -> torch.Tensor:
+    observations = batch.observations
+    actions = batch.actions
+    ...
+    your_actor_loss = actor_loss_func(observations, actions)
     return your_actor_loss
 ```
 * Import *YourSACImpl* in *YourSAC.py* and modify *_create_impl* function to pass your algorithm parameters to *YourSACImpl.py*
