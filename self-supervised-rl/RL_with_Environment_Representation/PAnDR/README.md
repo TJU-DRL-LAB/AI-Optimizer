@@ -1,8 +1,9 @@
-# ICLR 2022 GPL Workshop-Policy Adaptation via Decoupled Policy and Environment Representations (PAnDR)
+# IJCAI 2022-Policy Adaptation via Decoupled Policy and Environment Representations (PAnDR)
 
 This is the official implementation of 
 our work [PAnDR: Fast Adaptation to New Environments from Offline Experiences via Decoupling Policy and Environment Representations](https://arxiv.org/abs/2204.02877)
-presented at ICLR 2022 Workshop on Generalizable Policy Leanring (GPL).
+accepted on IJCAI 2022.
+A preliminary version is also presented at ICLR 2022 Workshop on Generalizable Policy Leanring (GPL).
 
 ## Introduction
 
@@ -21,10 +22,18 @@ A conceptual illustration is shown below.
 ## Repo Content
 
 ### Folder Description
+- ppo: implementation of PPO [[Schulman et al., 2017]](https://arxiv.org/abs/1707.06347), used to learn the policies of the training environments.
+- myant, myswimmer, myspaceship: enviornments used in the experiments, from PDVF [[Raileanu et al., 2020]](https://arxiv.org/abs/2007.02879v1).
+- env_utils.py: interact with the environment to collect data.
+- pandr_storage.py: store data.
+- pdvf_networks.py: network structure.
+- train_utils.py: optimizer of model.
+- pandr_arguments.py: parameters setting.
+- train_utils.py: model save and load.
+- main_train.py: contains training of encoder networks, training of value function network, policy optimization and testing.
 
 
 ### Domains and Environments
-
 
 ## Installation
 
@@ -33,7 +42,11 @@ We recommend the user to install **anaconada** and or **venv** for convenient ma
 ### Dependencies
 
 - Python 
-
+- numpy
+- gym
+- mujoco-py
+- baselines 0.1.6
+- torch 1.7.1
 
 
 ### Environment Installation
@@ -50,24 +63,12 @@ pip install -e .
 
 ## Example Usage
 
-### (1) Reinforcement Learning Phase 
+### (1) Offline Data Collection Phase 
 
-Train PPO policies on each environments.
 
-Each of the commands below need to be run 
-for seed in [0,...,4] and for default-ind in [0,...,19].
+For offline experiences, we first train a PPO policy for each environment. Each of the commands below need to be run for default-ind in [0,...,14] (15 training environments). The obtained policies are training policies that serve as the collectors of offline data. 
 
-#### Spaceship
-```
-python ppo/ppo_main.py \
---env-name spaceship-v0 --default-ind 0 --seed 0 
-```
-
-#### Swimmer
-```
-python ppo/ppo_main.py \
---env-name myswimmer-v0 --default-ind 0 --seed 0 
-```
+For each domain, 50-episode interaction trajectories are collected by each combination of training environment and training policy, e.g., 15 ∗ 15 ∗ 50 episodes of experiences collected in total for Ant-Wind.
 
 #### Ant-wind
 ```
@@ -75,7 +76,7 @@ python ppo/ppo_main.py \
 --env-name myant-v0 --default-ind 0 --seed 0 
 ```
 
-### (2) PAnDR Training Phase
+### (2) PAnDR Training & Adaptation Phase
 
 #### Ant-wind
 ```
