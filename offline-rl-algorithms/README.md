@@ -96,20 +96,21 @@ git clone git@github.com:TJU-DRL-LAB/offline-rl-algorithms.git
 Here we introduce how to configure your own dataset and modify the algorithm based on your own design. 
 
 ### Dataset
+* Rewrite *tjuOfflineRL.get_dataset.py* to add *get_your_data* function in get_dataset function.
 ```
-# Rewrite tjuOfflineRL.get_dataset.py to add get_your_data_function in get_dataset function.
+# 
 def get_dataset(
-    env_name: str, create_mask: bool = False, mask_size: int = 1
-) -> Tuple[MDPDataset, gym.Env]:
+    env_name: str, create_mask: bool = False, mask_size: int = 1) -> Tuple[MDPDataset, gym.Env]:
   
     if env_name == "existing datasets":
         return get_existing_datasets()
     elif env_name == "your own datasets":
-        return get_your_data_function()
+        return get_your_data()
     raise ValueError(f"Unrecognized env_name: {env_name}.")
-
-# Load your datasets and transform then into MDPDataset format
-def get_your_data_function():
+```
+* Load your datasets and transform then into *MDPDataset* format
+```
+def get_your_data():
     observations = []
     actions = []
     rewards = []
@@ -170,6 +171,14 @@ def get_your_data_function():
 
     return mdp_dataset, env
 
+```
+* get your own datasets by
+```
+from tjuOfflineRL.datasets import get_dataset
+parser = argparse.ArgumentParser()
+parser.add_argument('--dataset', type=str, default='your dataset')
+args = parser.parse_args()
+get_dataset(args.dataset)
 ```
 ### Modify Algorithm
 Assuming you're modifying algorithm based on SAC: 
