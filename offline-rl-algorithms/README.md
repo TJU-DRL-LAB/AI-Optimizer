@@ -98,7 +98,6 @@ Here we introduce how to configure your own dataset and modify the algorithm bas
 ### Dataset
 * Rewrite *tjuOfflineRL.get_dataset.py* to add *get_your_data* function in get_dataset function.
 ```
-# 
 def get_dataset(
     env_name: str, create_mask: bool = False, mask_size: int = 1) -> Tuple[MDPDataset, gym.Env]:
   
@@ -183,6 +182,11 @@ get_dataset(args.dataset)
 ### Modify Algorithm
 Assuming you're modifying algorithm based on SAC: 
 * Create two python file, name them as *YourSAC.py* and *YourSACImpl.py*. 其中*YourSACImpl.py*中指定的*YourSACImpl* class继承*SACImpl*.
+```
+class YourSACImpl(SACImpl):
+    def __init__(self, a=A, b=B):
+        ...
+```
 * Modify your algo in *YourSACImpl.py* by overloading *compute_critic_loss/compute_actor_loss/other* functions.
 ```
 def compute_critic_loss(self, batch: TorchMiniBatch, q_tpn: torch.Tensor) -> torch.Tensor:
