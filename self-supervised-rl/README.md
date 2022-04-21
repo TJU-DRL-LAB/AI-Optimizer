@@ -140,8 +140,8 @@ Environments and code frameworks may differ among different branches. Thus, plea
 
 
 ## TODO
-
-- [ ] Update the README files for each branch
+- [ ] Found mistakes in uploading code files due to Github's prevention of manually uploading empty files, e.g., __init__.py . This will be addressed by uploading through sub-module soon
+- [x] Update the README files for each branch
 
 ## Liscense
 
