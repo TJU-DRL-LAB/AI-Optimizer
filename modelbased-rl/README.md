@@ -135,11 +135,11 @@ We give some usage guidance about installing dependencies for beginners here, an
 
 Here we introduce how to configure your own dataset and modify the algorithm based on your own design for .
 
-##### Dependencies
+### Dependencies
 
 First follow the vanilla Dreamer and MBPO method and install the coresponding dependencies (we introduced them in Dreamer/README.md and MBPO/README.md). Then run ED2-Dreamer or ED2-MBPO (following the detail operation in ED2-Dreamer/README.md or ED2-MBPO/README.md).
 
-##### Modify algorithms
+### Modify algorithms
 
 We integrated related works and codes into one framework, in order to make it easy to compare the main improvements between different works. For example, for Dreamer and ED2-Dreamer, we integrate the world model construction of both methods in a single moduel, and the same is true for other parts such as policies or wrappers. In this way, you can **target the modifications you want to improve, and quickly verify and compare**.
 
