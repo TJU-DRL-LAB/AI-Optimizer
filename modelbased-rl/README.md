@@ -129,7 +129,7 @@ git clone git@github.com:TJU-DRL-LAB/modelbased-rl.git
 Note that this repo is a collection of multiple research branches (according to the taxonomy). 
 Environments and code frameworks may differ among different branches. Thus, please follow the installation guidance provided in the specific branch you are insterested in.
 
-## Usage
+## Usage Guidance
 
 First follow the vanilla Dreamer and MBPO method and run the baselines (we introduced them in Dreamer/README.md and MBPO/README.md). Then run ED2-Dreamer or ED2-MBPO (following the detail operation in ED2-Dreamer/README.md or ED2-MBPO/README.md).
 In addition, we provide codes for Muzero, one of the most classic baseline for planning method.
