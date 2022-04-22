@@ -131,7 +131,18 @@ Environments and code frameworks may differ among different branches. Thus, plea
 
 ## Usage Guidance
 
-First follow the vanilla Dreamer and MBPO method and run the baselines (we introduced them in Dreamer/README.md and MBPO/README.md). Then run ED2-Dreamer or ED2-MBPO (following the detail operation in ED2-Dreamer/README.md or ED2-MBPO/README.md).
+We give some usage guidance about installing dependencies for beginners here, and also introduce how to modify the algorithm based on our implement version.
+
+Here we introduce how to configure your own dataset and modify the algorithm based on your own design for .
+
+##### Dependencies
+
+First follow the vanilla Dreamer and MBPO method and install the coresponding dependencies (we introduced them in Dreamer/README.md and MBPO/README.md). Then run ED2-Dreamer or ED2-MBPO (following the detail operation in ED2-Dreamer/README.md or ED2-MBPO/README.md).
+
+##### Modify algorithms
+
+We integrated related works and codes into one framework, in order to make it easy to compare the main improvements between different works. For example, for Dreamer and ED2-Dreamer, we integrate the world model construction of both methods in a single moduel, and the same is true for other parts such as policies or wrappers. In this way, you can **target the modifications you want to improve, and quickly verify and compare**.
+
 In addition, we provide codes for Muzero, one of the most classic baseline for planning method.
 
 If you have useful suggestions, don't hesitate to raise an issue or submit a pull request!
