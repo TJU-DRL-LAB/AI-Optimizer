@@ -141,12 +141,13 @@ First follow the vanilla Dreamer and MBPO method and install the coresponding de
 
 ### Modify algorithms
 
-We integrated related works and codes into one framework, in order to make it easy to compare the main improvements between different works. For example, for Dreamer and ED2-Dreamer, we integrate the world model construction of both methods in a single moduel, and the same is true for other parts such as policies or wrappers. In this way, you can **target the modifications you want to improve, and quickly verify and compare**.
+We integrated related works and codes into a unified framework, in order to make it easy to compare the main improvements between different works. For example, for Dreamer and ED2-Dreamer, we integrate the world model construction of both methods in a single moduel, and the same is true for other parts such as policies or wrappers. In this way, you can **target the modifications you want to improve, and quickly verify and compare**.
 
 
 
 ## TODO
 
+- [ ] Integrate codes of related work in unified framework
 - [ ] Update a liscence
 - [ ] Update the README files for each branches
 - [ ] Check the vadality of codes to release
