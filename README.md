@@ -4,7 +4,7 @@ AI-Optimizer is a next-generation deep reinforcement learning suit, providing ri
 
 AI-Optimizer now provides the following built-in libraries, and more libraries and implementations are coming soon.
 - [Multiagent Reinforcement learning](multiagent-rl)
-- [Self-supervised Representation Reinforcement Learning](self-supervised-rl)
+- [Self-supervised Representation Reinforcement Learning](https://github.com/TJU-DRL-LAB/self-supervised-rl)
 - [Offline Reinforcement Learning](offline-rl-algorithms)
 - [Transfer and Multi-task Reinforcement Learning](https://github.com/TJU-DRL-LAB/transfer-and-multi-task-reinforcement-learning)
 - [Model-based Reinforcement Learning](modelbased-rl)
@@ -124,7 +124,7 @@ Finally, this promotes the deployment and landing of RL in real-world applicatio
 
 <div align=center><img align="center" src="./self-supervised-rl/assets/Ecology_of_SSRL.png" alt="Ecology of SSRL" style="zoom:40%;" /></div>
 
-See more [here](self-supervised-rl).
+See more [here](https://github.com/TJU-DRL-LAB/self-supervised-rl).
 
 ### 💦 Contribution
 
