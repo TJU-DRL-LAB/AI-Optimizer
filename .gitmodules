@@ -7,3 +7,6 @@
 [submodule "transfer-and-multi-task-reinforcement-learning"]
 	path = transfer-and-multi-task-reinforcement-learning
 	url = https://github.com/TJU-DRL-LAB/transfer-and-multi-task-reinforcement-learning.git
+[submodule "self-supervised-rl"]
+	path = self-supervised-rl
+	url = git@github.com:TJU-DRL-LAB/self-supervised-rl.git
