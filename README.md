@@ -122,7 +122,7 @@ For researches from all four pespectives, a unified framework of algorithm and i
 The representations studied from different pespectives further boost various downstream RL tasks.
 Finally, this promotes the deployment and landing of RL in real-world applications.
 
-<div align=center><img align="center" src="./self-supervised-rl/assets/Ecology_of_SSRL.png" alt="Ecology of SSRL" style="zoom:40%;" /></div>
+<div align=center><img align="center" src="./images/Ecology_of_SSRL.png" alt="Ecology of SSRL" style="zoom:40%;" /></div>
 
 See more [here](https://github.com/TJU-DRL-LAB/self-supervised-rl).
 
