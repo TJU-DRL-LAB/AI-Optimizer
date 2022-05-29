@@ -65,3 +65,13 @@ Graphs and GIFs:
 tensorboard --logdir ./logdir
 ```
 
+Vanilla_Dreamer & ED2_Dreamer:
+你可以通过修改参数model_num来分别运行原始版本的Dreamer和ED2_Dreamer。
+
+```
+python -u dreamer.py --logdir ./logdir/dmc_humanoid_walk/Dreamer --task dmc_humanoid_walk --model_num Dreamer --steps 5100000 --separate_schema Vanilla
+```
+
+```
+python -u dreamer.py --logdir ./logdir/dmc_humanoid_walk/ED2_Dreamer --task dmc_humanoid_walk --model_num ED2_Dreamer --steps 5100000 --separate_schema ED2 
+```
