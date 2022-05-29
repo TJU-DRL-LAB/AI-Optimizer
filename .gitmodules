@@ -7,3 +7,6 @@
 [submodule "self-supervised-rl"]
 	path = self-supervised-rl
 	url = git@github.com:TJU-DRL-LAB/self-supervised-rl.git
+[submodule "multiagent-rl/core"]
+	path = multiagent-rl/core
+	url = git@github.com:TJU-DRL-LAB/Multiagent-RL.git
