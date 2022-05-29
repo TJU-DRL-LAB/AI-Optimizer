@@ -99,7 +99,7 @@ an overall view of research works in this repo
 | **credit_assignment**       |                                                             | (1) [QPD (ICML-2020) [6]](http://proceedings.mlr.press/v119/yang20d/yang20d.pdf) <br />(2) [Qatten (Arxiv) [7]](https://arxiv.org/abs/2002.03939) | :white_check_mark: |
 | **non-stationarity**       | (1) self_imitation_learning<br />(2) opponent modeling<br /> | (1) [GASIL (AAMAS-2019) [8]](https://www.ifaamas.org/Proceedings/aamas2019/pdfs/p1315.pdf)<br />(2) [BPR+ (NIPS-2018) [9]](https://proceedings.neurips.cc/paper/2018/file/85422afb467e9456013a2a51d4dff702-Paper.pdf)<br />(3) [DPN-BPR+ (AAMAS2020) [10]](https://link.springer.com/article/10.1007/s10458-020-09480-9) <br /> | :white_check_mark: |
 | **multiagent_exploration**  |                                                             | [PMIC (NIPS-2021 workshop) [11]](https://www.cooperativeai.com/neurips-2021/workshop-papers) | :white_check_mark: |
-| **hybrid_action**           |                                                             | [MAPQN/MAHHQN (IJCAI-2019) [12]](https://arxiv.org/pdf/1903.04959.pdf?ref=https://githubhelp.com) | :no_entry:                |
+| **hybrid_action**           |                                                             | [MAPQN/MAHHQN (IJCAI-2019) [12]](https://arxiv.org/pdf/1903.04959.pdf?ref=https://githubhelp.com) | :white_check_mark:                |
 | **negotiation**    |                                                        | alpha-Nego | :white_check_mark: |
 
 

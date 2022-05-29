@@ -1,6 +1,3 @@
-[submodule "multiagent-rl/src"]
-	path = multiagent-rl/src
-	url = https://github.com/TJU-DRL-LAB/Multiagent-RL.git
 [submodule "cornerstone"]
 	path = cornerstone
 	url = https://github.com/TJU-DRL-LAB/cornerstone.git
