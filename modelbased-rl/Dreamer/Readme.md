@@ -66,7 +66,7 @@ tensorboard --logdir ./logdir
 ```
 
 Vanilla_Dreamer & ED2_Dreamer:
-你可以通过修改参数model_num来分别运行原始版本的Dreamer和ED2_Dreamer。
+We have seperate the corresponding part such as 'model' and 'algorithm' from the whole project so that you can modify the hyperparameters 'model_num' to run the vanilla dreamer and ED2 dreamer version independently. 
 
 ```
 python -u dreamer.py --logdir ./logdir/dmc_humanoid_walk/Dreamer --task dmc_humanoid_walk --model_num Dreamer --steps 5100000 --separate_schema Vanilla
