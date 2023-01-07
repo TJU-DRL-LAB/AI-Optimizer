@@ -33,15 +33,12 @@ Current deep RL methods still typically rely on active data collection to succee
 This repository contains the codes of representative benchmarks and algorithms on the topic of Offline Reinforcement Learning. The repository is developed based on [d3rlpy](https://github.com/takuseno/d3rlpy) following MIT license to shed lights on the research on the above three challenges. While inheriting its advantages, the additional features include (or will be included).
 
  - For people who are insterested in Offline RL, our introduction of each algorithm and our [tutorial blogs](https://zhuanlan.zhihu.com/p/414497708) can be helpful.
- - For RL practicers (especially who work on related fields), we provide advanced Offline RL algorithms with strong performance and different kinds of datasets. In detail, we provide:
+ - For RL practicers (especially who work on related fields), we provide advanced Offline RL algorithms with strong performance and different kinds of datasets. In detail, we provide contents and supports for:
    - **A unified algorithm framework with rich and fair comparisons bewteen different algorithms**  (In Progress)
    - **Abundant and real-world datasets**:
-     - Multimodal datasets (DDL: 2022/05/30)
-     - Real-world industrial datasets (DDL: TBD)
-     - Augmented datasets (and corresponding methods) (DDL: 2022/09/30)
-     - Datasets obtained using representation learning (and corresponding methods) (DDL: 2022/09/30)
+     - Real-world industrial datasets Waymo
    - **More easy-to-use log systems support**: 
-     - Wandb (DDL: 2022/04/30)
+     - Wandb
 ![Ecology of Offline RL](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/Framework%20of%20Offline%20RL.png)
 
 
@@ -55,7 +52,7 @@ This repository contains the codes of representative benchmarks and algorithms o
 | PC       | [Bootstrapping Error Accumulation Reduction (BEAR)](./BEAR)            | ✅            | ✅                  | NIPS 2019  |  [Stabilizing Off-Policy Q-Learning via Bootstrapping Error Reduction](https://proceedings.neurips.cc/paper/2019/file/c2073ffa77b5357a498057413bb09d3a-Paper.pdf)    |
 | PC       | Advantage-Weighted Regression (AWR)                          | ✅            | ✅                  |   |   [Advantage-weighted regression: Simple and scalable off-policy reinforcement learning](https://arxiv.org/pdf/1910.00177.pdf)   |
 | VR       | [Conservative Q-Learning (CQL)](./CQL)                                | ✅            | ✅                  | NIPS 2020   |  [Conservative Q-Learning for Offline Reinforcement Learning](https://proceedings.neurips.cc/paper/2020/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf)    |
-| VR       | Critic Reguralized Regression (CRR)                          | ✅            | ❌                  | NIPS 2020   |  [Critic Regularized Regression](https://proceedings.neurips.cc//paper/2020/file/588cb956d6bbe67078f29f8de420a13d-Paper.pdf)    |
+| VR       | Critic Reguralized Regression (CRR)                          | ❌           | ❌                  | NIPS 2020   |  [Critic Regularized Regression](https://proceedings.neurips.cc//paper/2020/file/588cb956d6bbe67078f29f8de420a13d-Paper.pdf)    |
 | VR       | Implicit Q-Learning (IQL)                                    | ✅            | ❌                  | In progress   |  [Offline Reinforcement Learning with Implicit Q-Learning](https://arxiv.org/pdf/2110.06169.pdf)    |
 | U        | [Uncertainty Weighted Actor Critic (UWAC)](./UWAC)                     | ✅            | ✅                 |  ICML 2021           |  [Uncertainty Weighted Actor-Critic for Offline Reinforcement Learning](<http://proceedings.mlr.press/v139/wu21i/wu21i.pdf>)    |
 | U        | SAC-N                                                        | ✅            | ❌                  |             |  [Uncertainty-Based Offline Reinforcement Learning with Diversified Q-Ensemble](<https://openreview.net/pdf?id=ZUvaSolQZh3>)    |
@@ -63,7 +60,7 @@ This repository contains the codes of representative benchmarks and algorithms o
 | MB       | Model-based Offline Policy Optimization (MOPO)               | ✅            | ❌                  |    NIPS 2020         |  [MOPO: Model-based Offline Policy Optimization](<https://proceedings.neurips.cc/paper/2020/file/a322852ce0df73e204b7e67cbbef0d0a-Paper.pdf>)    |
 | MB       | Conservative Offline Model-Based Policy Optimization (COMBO) | ✅            | ❌                  |   NIPS 2021          |  [COMBO: Conservative Offline Model-Based Policy Optimization](<https://proceedings.neurips.cc/paper/2021/file/f29a179746902e331572c483c45e5086-Paper.pdf>)    |
 | Off2On   | [Advantage Weighted Actor-Critic (AWAC)](./AWAC)                       | ✅            | ✅                  | In progress |  [AWAC: Accelerating Online Reinforcement Learning with Offline Datasets](<https://arxiv.org/pdf/2006.09359.pdf>)    |
-| Off2On   | Balanced Replay (BRED)                                       | ❌          | ❌                  | CoRL 2021   |   [Offline-to-Online Reinforcement Learning via Balanced Replay and Pessimistic Q-Ensemble](<https://arxiv.org/pdf/2107.00591.pdf>)   |
+| Off2On   | Balanced Replay (BRED)                                       | ✅          | ❌                  | CoRL 2021   |   [Offline-to-Online Reinforcement Learning via Balanced Replay and Pessimistic Q-Ensemble](<https://arxiv.org/pdf/2107.00591.pdf>)   |
 
 
 
@@ -96,7 +93,7 @@ git clone git@github.com:TJU-DRL-LAB/offline-rl-algorithms.git
 Here we introduce how to configure your own dataset and modify the algorithm based on your own design. 
 
 ### Dataset
-* Rewrite *tjuOfflineRL.get_dataset.py* to add *get_your_data* function in get_dataset function.
+* Rewrite *d3rlpy.get_dataset.py* to add *get_your_data* function in get_dataset function.
 ```
 def get_dataset(
     env_name: str, create_mask: bool = False, mask_size: int = 1) -> Tuple[MDPDataset, gym.Env]:
@@ -173,7 +170,7 @@ def get_your_data():
 ```
 * get your own datasets by
 ```
-from tjuOfflineRL.datasets import get_dataset
+from d3rlpy.datasets import get_dataset
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', type=str, default='your dataset')
