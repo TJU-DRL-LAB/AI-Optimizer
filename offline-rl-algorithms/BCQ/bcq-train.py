@@ -1,22 +1,22 @@
 import argparse
-import tjuOfflineRL
+import d3rlpy
 from sklearn.model_selection import train_test_split
 import torch
 
 def main(args):
     torch.set_num_threads(2)
-    dataset, env = tjuOfflineRL.datasets.get_dataset(args.dataset)
+    dataset, env = d3rlpy.datasets.get_dataset(args.dataset)
 
     # fix seed
-    tjuOfflineRL.seed(args.seed)
+    d3rlpy.seed(args.seed)
     env.seed(args.seed)
 
     _, test_episodes = train_test_split(dataset, test_size=0.2)
 
-    vae_encoder = tjuOfflineRL.models.encoders.VectorEncoderFactory([750, 750])
-    rl_encoder = tjuOfflineRL.models.encoders.VectorEncoderFactory([400, 300])
+    vae_encoder = d3rlpy.models.encoders.VectorEncoderFactory([750, 750])
+    rl_encoder = d3rlpy.models.encoders.VectorEncoderFactory([400, 300])
 
-    bcq = tjuOfflineRL.algos.BCQ(actor_encoder_factory=rl_encoder,
+    bcq = d3rlpy.algos.BCQ(actor_encoder_factory=rl_encoder,
                            actor_learning_rate=1e-3,
                            critic_encoder_factory=rl_encoder,
                            critic_learning_rate=1e-3,
@@ -35,7 +35,7 @@ def main(args):
             save_interval=10,
             tensorboard_dir='bcq_runs/' + args.dataset + '/' + str(args.seed),
             scorers={
-                'environment': tjuOfflineRL.metrics.evaluate_on_environment(env),
+                'environment': d3rlpy.metrics.evaluate_on_environment(env),
             },
             experiment_name=f"BCQ_{args.dataset}_{args.seed}")
 
