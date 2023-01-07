@@ -1,6 +1,6 @@
 from typing import Any, Dict, Optional, Sequence
 
-from tjuOfflineRL.argument_utility import (
+from d3rlpy.argument_utility import (
     ActionScalerArg,
     EncoderArg,
     QFuncArg,
@@ -11,13 +11,13 @@ from tjuOfflineRL.argument_utility import (
     check_q_func,
     check_use_gpu,
 )
-from tjuOfflineRL.constants import IMPL_NOT_INITIALIZED_ERROR, ActionSpace
-from tjuOfflineRL.dataset import TransitionMiniBatch
-from tjuOfflineRL.gpu import Device
-from tjuOfflineRL.models.encoders import EncoderFactory
-from tjuOfflineRL.models.optimizers import AdamFactory, OptimizerFactory
-from tjuOfflineRL.models.q_functions import QFunctionFactory
-from tjuOfflineRL.algos.base import AlgoBase
+from d3rlpy.constants import IMPL_NOT_INITIALIZED_ERROR, ActionSpace
+from d3rlpy.dataset import TransitionMiniBatch
+from d3rlpy.gpu import Device
+from d3rlpy.models.encoders import EncoderFactory
+from d3rlpy.models.optimizers import AdamFactory, OptimizerFactory
+from d3rlpy.models.q_functions import QFunctionFactory
+from d3rlpy.algos.base import AlgoBase
 from .uwac_impl import UWACImpl
 
 
@@ -72,23 +72,23 @@ class UWAC(AlgoBase):
             function.
         temp_learning_rate (float): learning rate for temperature parameter.
         alpha_learning_rate (float): learning rate for :math:`\alpha`.
-        actor_optim_factory (tjuOfflineRL.models.optimizers.OptimizerFactory):
+        actor_optim_factory (d3rlpy.models.optimizers.OptimizerFactory):
             optimizer factory for the actor.
-        critic_optim_factory (tjuOfflineRL.models.optimizers.OptimizerFactory):
+        critic_optim_factory (d3rlpy.models.optimizers.OptimizerFactory):
             optimizer factory for the critic.
-        imitator_optim_factory (tjuOfflineRL.models.optimizers.OptimizerFactory):
+        imitator_optim_factory (d3rlpy.models.optimizers.OptimizerFactory):
             optimizer factory for the behavior policy.
-        temp_optim_factory (tjuOfflineRL.models.optimizers.OptimizerFactory):
+        temp_optim_factory (d3rlpy.models.optimizers.OptimizerFactory):
             optimizer factory for the temperature.
-        alpha_optim_factory (tjuOfflineRL.models.optimizers.OptimizerFactory):
+        alpha_optim_factory (d3rlpy.models.optimizers.OptimizerFactory):
             optimizer factory for :math:`\alpha`.
-        actor_encoder_factory (tjuOfflineRL.models.encoders.EncoderFactory or str):
+        actor_encoder_factory (d3rlpy.models.encoders.EncoderFactory or str):
             encoder factory for the actor.
-        critic_encoder_factory (tjuOfflineRL.models.encoders.EncoderFactory or str):
+        critic_encoder_factory (d3rlpy.models.encoders.EncoderFactory or str):
             encoder factory for the critic.
-        imitator_encoder_factory (tjuOfflineRL.models.encoders.EncoderFactory or str):
+        imitator_encoder_factory (d3rlpy.models.encoders.EncoderFactory or str):
             encoder factory for the behavior policy.
-        q_func_factory (tjuOfflineRL.models.q_functions.QFunctionFactory or str):
+        q_func_factory (d3rlpy.models.q_functions.QFunctionFactory or str):
             Q function factory.
         batch_size (int): mini-batch size.
         n_frames (int): the number of frames to stack for image observation.
@@ -114,16 +114,16 @@ class UWAC(AlgoBase):
             policy training.
         warmup_steps (int): the number of steps to warmup the policy
             function.
-        use_gpu (bool, int or tjuOfflineRL.gpu.Device):
+        use_gpu (bool, int or d3rlpy.gpu.Device):
             flag to use GPU, device iD or device.
-        scaler (tjuOfflineRL.preprocessing.Scaler or str): preprocessor.
+        scaler (d3rlpy.preprocessing.Scaler or str): preprocessor.
             The avaiable options are `['pixel', 'min_max', 'standard']`.
-        action_scaler (tjuOfflineRL.preprocessing.ActionScaler or str):
+        action_scaler (d3rlpy.preprocessing.ActionScaler or str):
             action preprocessor. The avaiable options are ``['min_max']``.
-        reward_scaler (tjuOfflineRL.preprocessing.RewardScaler or str):
+        reward_scaler (d3rlpy.preprocessing.RewardScaler or str):
             reward preprocessor. The available options are
             ``['clip', 'min_max', 'standard']``.
-        impl (tjuOfflineRL.algos.torch.uwac_impl.UWACImpl): algorithm implementation.
+        impl (d3rlpy.algos.torch.uwac_impl.UWACImpl): algorithm implementation.
 
     """
 

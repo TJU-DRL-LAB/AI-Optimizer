@@ -5,20 +5,20 @@ import numpy as np
 import torch
 from torch.optim import Optimizer
 
-from tjuOfflineRL.gpu import Device
-from tjuOfflineRL.models.builders import create_conditional_vae, create_parameter
-from tjuOfflineRL.models.encoders import EncoderFactory
-from tjuOfflineRL.models.optimizers import OptimizerFactory
-from tjuOfflineRL.models.q_functions import QFunctionFactory
-from tjuOfflineRL.models.torch import (
+from d3rlpy.gpu import Device
+from d3rlpy.models.builders import create_conditional_vae, create_parameter
+from d3rlpy.models.encoders import EncoderFactory
+from d3rlpy.models.optimizers import OptimizerFactory
+from d3rlpy.models.q_functions import QFunctionFactory
+from d3rlpy.models.torch import (
     ConditionalVAE,
     Parameter,
     compute_max_with_n_actions_and_indices,
     compute_max_with_n_actions_and_indices_and_vars,
 )
-from tjuOfflineRL.preprocessing import ActionScaler, RewardScaler, Scaler
-from tjuOfflineRL.torch_utility import TorchMiniBatch, torch_api, train_api
-from tjuOfflineRL.algos.torch.sac_impl import SACImpl
+from d3rlpy.preprocessing import ActionScaler, RewardScaler, Scaler
+from d3rlpy.torch_utility import TorchMiniBatch, torch_api, train_api
+from d3rlpy.algos.torch.sac_impl import SACImpl
 
 
 def _gaussian_kernel(
