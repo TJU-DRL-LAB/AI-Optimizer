@@ -1,6 +1,6 @@
 import argparse
 import gym
-import tjuOfflineRL
+import d3rlpy
 import torch
 
 
@@ -18,19 +18,19 @@ def main():
     eval_env = gym.make(args.env)
 
     # fix seed
-    tjuOfflineRL.seed(args.seed)
+    d3rlpy.seed(args.seed)
     env.seed(args.seed)
     eval_env.seed(args.seed)
 
     # load algorithm
-    redq = tjuOfflineRL.algos.REDQ(batch_size=256,
+    redq = d3rlpy.algos.REDQ(batch_size=256,
                                    actor_learning_rate=3e-4,
                                    critic_learning_rate=3e-4,
                                    temp_learning_rate=3e-4,
                                    use_gpu=args.gpu)
 
     # replay buffer for experience replay
-    buffer = tjuOfflineRL.online.buffers.ReplayBuffer(maxlen=1000000, env=env)
+    buffer = d3rlpy.online.buffers.ReplayBuffer(maxlen=1000000, env=env)
 
     # start training
     redq.fit_online_redq(env,
