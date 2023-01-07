@@ -1,22 +1,22 @@
 import argparse
-import tjuOfflineRL
+import d3rlpy
 from sklearn.model_selection import train_test_split
 import torch
 
 def main(args):
     torch.set_num_threads(2)
-    dataset, env = tjuOfflineRL.datasets.get_dataset(args.dataset)
+    dataset, env = d3rlpy.datasets.get_dataset(args.dataset)
 
     # fix seed
-    tjuOfflineRL.seed(args.seed)
+    d3rlpy.seed(args.seed)
     env.seed(args.seed)
 
     _, test_episodes = train_test_split(dataset, test_size=0.2)
 
-    encoder = tjuOfflineRL.models.encoders.VectorEncoderFactory([256, 256, 256, 256])
-    optim = tjuOfflineRL.models.optimizers.AdamFactory(weight_decay=1e-4)
+    encoder = d3rlpy.models.encoders.VectorEncoderFactory([256, 256, 256, 256])
+    optim = d3rlpy.models.optimizers.AdamFactory(weight_decay=1e-4)
 
-    awac = tjuOfflineRL.algos.AWAC(actor_learning_rate=3e-4,
+    awac = d3rlpy.algos.AWAC(actor_learning_rate=3e-4,
                              actor_encoder_factory=encoder,
                              actor_optim_factory=optim,
                              critic_learning_rate=3e-4,
@@ -31,7 +31,7 @@ def main(args):
              save_interval=10,
              tensorboard_dir='awac_runs/' + args.dataset + '/' + str(args.seed),
              scorers={
-                 'environment': tjuOfflineRL.metrics.evaluate_on_environment(env),
+                 'environment': d3rlpy.metrics.evaluate_on_environment(env),
              },
              experiment_name=f"AWAC_{args.dataset}_{args.seed}")
 
