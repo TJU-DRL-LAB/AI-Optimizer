@@ -1,25 +1,25 @@
 import argparse
-import tjuOfflineRL
+import d3rlpy
 from sklearn.model_selection import train_test_split
 
 
 def main(args):
-    dataset, env = tjuOfflineRL.datasets.get_dataset(args.dataset)
+    dataset, env = d3rlpy.datasets.get_dataset(args.dataset)
 
     # fix seed
-    tjuOfflineRL.seed(args.seed)
+    d3rlpy.seed(args.seed)
     env.seed(args.seed)
 
     _, test_episodes = train_test_split(dataset, test_size=0.2)
 
-    vae_encoder = tjuOfflineRL.models.encoders.VectorEncoderFactory([750, 750])
+    vae_encoder = d3rlpy.models.encoders.VectorEncoderFactory([750, 750])
 
     if 'halfcheetah' in env.unwrapped.spec.id.lower():
         kernel = 'gaussian'
     else:
         kernel = 'laplacian'
 
-    bear = tjuOfflineRL.algos.BEAR(actor_learning_rate=1e-4,
+    bear = d3rlpy.algos.BEAR(actor_learning_rate=1e-4,
                              critic_learning_rate=3e-4,
                              imitator_learning_rate=3e-4,
                              alpha_learning_rate=1e-3,
@@ -43,7 +43,7 @@ def main(args):
              save_interval=10,
              tensorboard_dir='runs/' + args.dataset + '/' + str(args.seed),
              scorers={
-                 'environment': tjuOfflineRL.metrics.evaluate_on_environment(env),
+                 'environment': d3rlpy.metrics.evaluate_on_environment(env),
              },
              experiment_name=f"BEAR_{args.dataset}_{args.seed}")
 
