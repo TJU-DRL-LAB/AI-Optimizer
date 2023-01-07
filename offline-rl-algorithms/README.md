@@ -71,13 +71,13 @@ The algorithms in this repo are all implemented **python 3.7** (and versions abo
 
 First of all, we recommend the user to install **anaconada** and or **venv** for convenient management of different python envs.
 
-In this repo, the following  environments is needed:
+In this repo, the following data and environments is needed:
 
-* https://github.com/TJU-DRL-LAB/offline-rl-base
+* https://github.com/TJU-DRL-LAB/offline-rl_base
 
 - [OpenAI Gym](https://github.com/openai/gym) (e.g., MuJoCo, Robotics)
 - [D4RL](https://github.com/rail-berkeley/d4rl)
-- ...
+- [Waymo Datasets](https://waymo.com/open/data/motion/)
 
 
 
