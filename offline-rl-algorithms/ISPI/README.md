@@ -24,7 +24,7 @@ python main.py --env halfcheetah-expert-v2 --normalize --alpha=1.0 --aweight=0.7
 
 ## Result
 ### Mujoco
-![image](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/ISPI/fig/mujoco-performance.pdf)
+![image](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/ISPI/fig/mujoco-performance.jpg)
 ### Antmaze
-![image](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/ISPI/fig/antmaze-performance.pdf
+![image](https://github.com/TJU-DRL-LAB/AI-Optimizer/blob/main/offline-rl-algorithms/ISPI/fig/antmaze-performance.jpg
 )
