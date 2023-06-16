@@ -4,7 +4,7 @@
 The training environment (PyTorch and dependencies) can be installed as follows:
 
 ```
-git clone https://github.com/.git
+git clone git@github.com:TJU-DRL-LAB/offline-rl-algorithms/E2O.git
 ```
 
 ## Train
