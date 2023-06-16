@@ -20,7 +20,7 @@ python main.py --env halfcheetah-expert-v2 --normalize --alpha=1.0 --aweight=0.7
 ```
 
 ## Paper
-<b>[In-Sample Policy Iteration for Offline Reinforcement Learning](https://arxiv.org/pdf/2306.05726.pdf) <br>
+[In-Sample Policy Iteration for Offline Reinforcement Learning](https://arxiv.org/pdf/2306.05726.pdf)
 
 
 ## Bibtex
