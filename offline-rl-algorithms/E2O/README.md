@@ -26,6 +26,14 @@ nohup python E2O-online.py --env='HalfCheetah-v2' --gpu=0 --seed=1 >output_E2O-C
 
 <b>[Ensemble-based Offline-to-Online Reinforcement Learning: From Pessimistic Learning to Optimistic Exploration](https://arxiv.org/pdf/2306.06871.pdf) <br>
 
+Results on MuJoCo locomotion tasks
+
+<p align="center"><img align="center" src="./images/E2O_exp_mujoco.png"/></p>
+
+Results on Antmaze navigation tasks
+
+<p align="center"><img align="center" src="./images/E2O_exp_antmaze.png"/></p>
+
 
 ## Cite
 
