@@ -10,7 +10,8 @@ import d4rl
 from loguru import logger
 
 import utils
-import ISPI
+import ISPI_C
+import ISPI_S
 
 
 # Runs policy for X episodes and returns D4RL score
@@ -120,7 +121,8 @@ if __name__ == "__main__":
     }
 
     # Initialize policy
-    policy = ISPI.ISPI(**kwargs)
+    policy = ISPI_C.ISPI(**kwargs)
+    # policy = ISPI_S.ISPI(**kwargs)
 
     if args.load_model != "":
         policy_file = file_name if args.load_model == "default" else args.load_model
